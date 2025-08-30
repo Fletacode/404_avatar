@@ -25,18 +25,18 @@ logger.addHandler(console_handler)
 
 load_dotenv(".env.local")
 
-# Global variables to store command line arguments
-CUSTOM_IMAGE_PATH = None
-CUSTOM_PROMPT = None
-USER_ID = None
-USERNAME = None
-
 
 async def entrypoint(ctx: JobContext):
     logger.info(f"Agent starting for room: {ctx.room.name}")
     
-    # Load configuration from environment variables at the start of entrypoint
-    load_config_from_env()
+    CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME = load_config_from_file()
+
+    # Configuration already loaded at startup, just use it
+    logger.info(f"Using loaded configuration:")
+    logger.info(f"  Image path: {CUSTOM_IMAGE_PATH}")
+    logger.info(f"  Prompt: {CUSTOM_PROMPT}")
+    logger.info(f"  User ID: {USER_ID}")
+    logger.info(f"  Username: {USERNAME}")
     
     # Use custom prompt if provided, otherwise use default
     agent_instructions = CUSTOM_PROMPT if CUSTOM_PROMPT else "Talk to me!"
@@ -48,7 +48,7 @@ async def entrypoint(ctx: JobContext):
     )
 
     # Get user avatar (custom or default)
-    user_avatar = await get_user_avatar(ctx.room)
+    user_avatar = await get_user_avatar(ctx.room, CUSTOM_IMAGE_PATH)
     logger.info(f"Selected avatar image: {os.path.basename(user_avatar.filename) if hasattr(user_avatar, 'filename') else 'Unknown'}")
     
     # Create avatar session with user-specific image
@@ -65,7 +65,7 @@ async def entrypoint(ctx: JobContext):
     session.generate_reply(instructions="say hello to the user")
 
 
-async def get_user_avatar(room) -> Image.Image:
+async def get_user_avatar(room, CUSTOM_IMAGE_PATH) -> Image.Image:
     """
     Get the appropriate avatar image based on the user in the room.
     Returns a custom image if provided via command line, otherwise uses default logic.
@@ -90,40 +90,6 @@ async def get_user_avatar(room) -> Image.Image:
         
         logger.info(f"Getting user avatar for room: {room.name}")
         
-        # Wait a bit for participants to be available
-        import asyncio
-        await asyncio.sleep(0.5)
-        
-        # Get all remote participants in the room
-        remote_participants = room.local_participant
-        logger.info(f"Found {len(remote_participants)} remote participants")
-        
-        # Look for human participants (non-agent)
-        for participant_sid, participant in remote_participants.items():
-            logger.info(f"Checking participant: {participant.identity}")
-            
-            if participant.identity and not participant.identity.startswith("agent"):
-                # Parse username from identity (format: username_userId)
-                if "_" in participant.identity:
-                    username = participant.identity.split("_")[0].lower()
-                    logger.info(f"Extracted username: {username}")
-                    
-                    # Map username to avatar image
-                    avatar_path = get_avatar_path_by_username(username)
-                    if avatar_path and os.path.exists(avatar_path):
-                        logger.info(f"Using avatar for user: {username} at path: {avatar_path}")
-                        return Image.open(avatar_path)
-                    else:
-                        logger.info(f"Avatar not found for user: {username}, using default")
-                        break
-                else:
-                    logger.info(f"User identity format not recognized: {participant.identity}, using default avatar")
-                    break
-        
-        # If no remote participants found, try local participant
-        if hasattr(room, 'local_participant') and room.local_participant:
-            logger.info(f"Checking local participant: {room.local_participant.identity}")
-        
         # Default avatar if no specific user avatar found
         default_avatar_path = os.path.join(os.path.dirname(__file__), "assets/fred.png")
         logger.info("Using default avatar: fred.png")
@@ -136,65 +102,67 @@ async def get_user_avatar(room) -> Image.Image:
         return Image.open(default_avatar_path)
 
 
-def get_avatar_path_by_username(username: str) -> str:
-    """
-    Map username to avatar image path.
-    Returns the path to the avatar image or None if not found.
-    """
-    assets_dir = os.path.join(os.path.dirname(__file__), "assets")
-    
-    # Define username to avatar mapping
-    avatar_mapping = {
-        "fred": os.path.join(assets_dir, "fred.png"),
-        "mary": os.path.join(assets_dir, "mary.png"),
-        # Add more mappings as needed
-        # "john": os.path.join(assets_dir, "john.png"),
-    }
-    
-    # First try exact match
-    if username in avatar_mapping:
-        return avatar_mapping[username]
-    
-    # If no exact match, try to find a similar avatar
-    # This allows for more flexible matching
-    for key in avatar_mapping.keys():
-        if key in username or username in key:
-            logger.info(f"Using similar avatar '{key}' for username '{username}'")
-            return avatar_mapping[key]
-    
-    # Return None if no match found
-    return None
 
-
-def load_config_from_env():
-    """Load configuration from environment variables"""
-    global CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME
+def load_config_from_file():
+    """Load configuration from config file"""
     
-    logger.info("Loading configuration from environment variables...")
     
-    CUSTOM_IMAGE_PATH = os.environ.get('AGENT_IMAGE_PATH')
-    CUSTOM_PROMPT = os.environ.get('AGENT_PROMPT')
-    USER_ID = os.environ.get('AGENT_USER_ID')
-    USERNAME = os.environ.get('AGENT_USERNAME')
+    config_file_path = os.path.join(os.path.dirname(__file__), "assets", "agent_config.txt")
     
-    logger.info(f"Environment variables loaded:")
-    logger.info(f"  AGENT_IMAGE_PATH: {CUSTOM_IMAGE_PATH}")
-    logger.info(f"  AGENT_PROMPT: {CUSTOM_PROMPT}")
-    logger.info(f"  AGENT_USER_ID: {USER_ID}")
-    logger.info(f"  AGENT_USERNAME: {USERNAME}")
+    logger.info(f"Loading configuration from file: {config_file_path}")
     
-    if CUSTOM_IMAGE_PATH:
-        # 이미지 파일 존재 확인
-        if os.path.exists(CUSTOM_IMAGE_PATH):
-            logger.info(f"✓ Custom image file exists: {CUSTOM_IMAGE_PATH}")
+    try:
+        if os.path.exists(config_file_path):
+            with open(config_file_path, 'r', encoding='utf-8') as f:
+                config_lines = f.readlines()
+            
+            for line in config_lines:
+                line = line.strip()
+                if line and '=' in line:
+                    key, value = line.split('=', 1)
+                    key = key.strip()
+                    value = value.strip()
+                    
+                    if key == 'IMAGE_PATH':
+                        CUSTOM_IMAGE_PATH = os.path.join(os.path.dirname(__file__), "assets", value)
+                        logger.info(f"Config file - Image path: {CUSTOM_IMAGE_PATH}")
+                    elif key == 'PROMPT':
+                        CUSTOM_PROMPT = value
+                        logger.info(f"Config file - Prompt: {CUSTOM_PROMPT}")
+                    elif key == 'USER_ID':
+                        USER_ID = value
+                        logger.info(f"Config file - User ID: {USER_ID}")
+                    elif key == 'USERNAME':
+                        USERNAME = value
+                        logger.info(f"Config file - Username: {USERNAME}")
+            
+            logger.info(f"Configuration loaded from file successfully")
+            
+            if CUSTOM_IMAGE_PATH:
+                # 이미지 파일 존재 확인
+                if os.path.exists(CUSTOM_IMAGE_PATH):
+                    logger.info(f"✓ Custom image file exists: {CUSTOM_IMAGE_PATH}")
+                else:
+                    logger.error(f"✗ Custom image file NOT found: {CUSTOM_IMAGE_PATH}")
+            else:
+                logger.info("No custom image path provided, will use default avatar selection")
+                
         else:
-            logger.error(f"✗ Custom image file NOT found: {CUSTOM_IMAGE_PATH}")
-    else:
-        logger.info("No custom image path provided, will use default avatar selection")
+            logger.info("Config file not found, using default configuration")
+        
+        return CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME
+            
+    except Exception as e:
+        logger.error(f"Error loading config file: {e}")
+        logger.info("Falling back to default configuration")
 
 if __name__ == "__main__":
     logger.info("Starting LiveKit Agent Worker...")
-    logger.info("Configuration will be loaded when agent connects to room")
+    
+    # 에이전트 시작 시점에 설정 파일 로드
+    
+    
+    logger.info("Configuration loaded, starting agent...")
     
     # Run the agent
     cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint, worker_type=WorkerType.ROOM))

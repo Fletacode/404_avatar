@@ -28,14 +28,22 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
     if (file) {
       setSelectedFile(file);
       setSelectedImageType("upload");
-      // 임시로 파일명을 경로로 사용 (실제로는 업로드 후 서버 경로 사용)
-      setImagePath(file.name);
+      
+      // 파일을 base64로 변환
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const result = e.target?.result as string;
+        if (result) {
+          setImagePath(result); // base64 데이터를 저장
+        }
+      };
+      reader.readAsDataURL(file);
     }
   };
 
   const handlePresetImageSelect = (imageName: string) => {
     setSelectedImageType("preset");
-    setImagePath(imageName);
+    setImagePath(imageName); // 프리셋 이미지는 파일명만 전달
     setSelectedFile(null);
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
@@ -84,7 +92,30 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
               아바타 이미지
             </label>
             
-            
+            {/* 프리셋 이미지 선택 */}
+            <div className="mb-4">
+              <h4 className="text-sm font-medium text-gray-600 mb-2">프리셋 이미지</h4>
+              <div className="flex gap-2">
+                {presetImages.map((image) => (
+                  <button
+                    key={image.name}
+                    type="button"
+                    onClick={() => handlePresetImageSelect(image.name)}
+                    className={`p-2 border-2 rounded-lg transition-colors ${
+                      selectedImageType === "preset" && imagePath === image.name
+                        ? 'border-blue-500 bg-blue-50'
+                        : 'border-gray-300 hover:border-gray-400'
+                    }`}
+                    disabled={isLoading}
+                  >
+                    <div className="text-center">
+                      <div className="text-lg mb-1">{image.displayName}</div>
+                      <div className="text-xs text-gray-500">{image.name}</div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
 
             {/* 커스텀 이미지 업로드 */}
             <div>

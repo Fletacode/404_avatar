@@ -68,30 +68,54 @@ export async function POST(request: Request) {
       return new NextResponse("Virtual environment not found", { status: 404 });
     }
 
-    // 이미지 파일의 절대 경로 구성 (assets 디렉토리에서 찾기)
-    const absoluteImagePath = path.join(backendDir, "assets", imagePath);
-    
-    // 이미지 파일이 존재하는지 확인
-    if (!fs.existsSync(absoluteImagePath)) {
-      return new NextResponse(`Image file not found: ${imagePath}`, { status: 404 });
-    }
+    // 이미지 파일 존재 여부는 나중에 처리 (프리셋 vs 업로드 구분)
 
     // 기존 프로세스 정리
     cleanupExistingProcesses();
     
     console.log(`Starting new agent process...`);
-    console.log(`Image path: ${absoluteImagePath}`);
+    console.log(`Image path: ${imagePath}`);
     console.log(`Prompt: ${prompt}`);
+
+    // 이미지 파일을 assets 디렉토리에 저장
+    let finalImagePath = imagePath;
+    
+    if (imagePath.startsWith('data:')) {
+      // 새로 업로드된 이미지인 경우 (base64)
+      try {
+        const imageBuffer = Buffer.from(imagePath.split(',')[1], 'base64');
+        const imageFileName = `user_avatar_${Date.now()}.png`;
+        const savedImagePath = path.join(backendDir, "assets", imageFileName);
+        
+        fs.writeFileSync(savedImagePath, imageBuffer);
+        finalImagePath = imageFileName;
+        
+        console.log(`Image saved to: ${savedImagePath}`);
+      } catch (error) {
+        console.error('Error saving uploaded image:', error);
+        return new NextResponse("Failed to save uploaded image", { status: 500 });
+      }
+    } else {
+      // 프리셋 이미지인 경우, 파일이 존재하는지 확인
+      const presetImagePath = path.join(backendDir, "assets", imagePath);
+      if (!fs.existsSync(presetImagePath)) {
+        return new NextResponse(`Preset image not found: ${imagePath}`, { status: 404 });
+      }
+      finalImagePath = imagePath;
+    }
+    
+    // 설정을 텍스트 파일로 저장
+    const configContent = `IMAGE_PATH=${finalImagePath}
+PROMPT=${prompt}
+USER_ID=${userId}
+USERNAME=${username}`;
+    
+    const configFilePath = path.join(backendDir, "assets", "agent_config.txt");
+    fs.writeFileSync(configFilePath, configContent, 'utf8');
+    console.log(`Configuration saved to: ${configFilePath}`);
 
     // spawn을 사용하여 프로세스 시작
     const child = spawn('/bin/bash', ['-c', `cd "${backendDir}" && source venv/bin/activate && python3 agent_worker.py start`], {
-      env: {
-        ...process.env,
-        AGENT_IMAGE_PATH: absoluteImagePath,
-        AGENT_PROMPT: prompt,
-        AGENT_USER_ID: userId,
-        AGENT_USERNAME: username,
-      },
       detached: false, // 부모 프로세스와 연결 유지
       stdio: ['ignore', 'pipe', 'pipe']
     });
