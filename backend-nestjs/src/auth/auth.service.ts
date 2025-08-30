@@ -6,6 +6,7 @@ import * as bcrypt from 'bcrypt';
 import { User } from '../entities/user.entity';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
+import { RelationshipToDeceased, PsychologicalSupportLevel } from '../entities/family-survey.entity';
 
 @Injectable()
 export class AuthService {
@@ -16,7 +17,20 @@ export class AuthService {
   ) {}
 
   async register(registerDto: RegisterDto): Promise<{ access_token: string; user: Partial<User> }> {
-    const { username, password, name, email, isAdmin } = registerDto;
+    const { 
+      username, 
+      password, 
+      name, 
+      email, 
+      isAdmin,
+      birthDate,
+      relationshipToDeceased,
+      relationshipDescription,
+      psychologicalSupportLevel,
+      meetingParticipationDesire,
+      personalNotes,
+      privacyAgreement
+    } = registerDto;
 
     // 중복 사용자명 확인
     const existingUser = await this.userRepository.findOne({ where: { username } });
@@ -28,14 +42,23 @@ export class AuthService {
     const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(password, saltRounds);
 
-    // 사용자 생성
-    const user = this.userRepository.create({
+    // 사용자 생성 (설문조사 필드들 포함)
+    const userData: Partial<User> = {
       username,
       password: hashedPassword,
       name,
       email,
       isAdmin: isAdmin || false,
-    });
+      birthDate: birthDate ? new Date(birthDate) : null,
+      relationshipToDeceased,
+      relationshipDescription,
+      psychologicalSupportLevel,
+      meetingParticipationDesire: meetingParticipationDesire || false,
+      personalNotes,
+      privacyAgreement: privacyAgreement || false,
+    };
+    
+    const user = this.userRepository.create(userData);
 
     const savedUser = await this.userRepository.save(user);
 

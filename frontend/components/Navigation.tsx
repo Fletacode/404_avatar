@@ -20,7 +20,6 @@ export function Navigation() {
   const navigation = [
     { name: '홈', href: '/' },
     { name: '게시판', href: '/board' },
-    { name: '설문조사', href: user ? '/survey/my' : '/survey/new' },
   ];
 
   const adminNavigation = [
@@ -78,6 +77,16 @@ export function Navigation() {
                     </span>
                   )}
                 </span>
+                <Link
+                  href="/profile"
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive('/profile')
+                      ? 'text-green-600 bg-green-50'
+                      : 'text-gray-700 hover:text-green-600 hover:bg-green-50'
+                  }`}
+                >
+                  내 정보
+                </Link>
                 <button
                   onClick={handleLogout}
                   className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-red-700 transition-colors"
@@ -91,13 +100,7 @@ export function Navigation() {
                   href="/"
                   className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
                 >
-                  로그인
-                </Link>
-                <Link
-                  href="/auth/register"
-                  className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors"
-                >
-                  회원가입
+                  로그인/회원가입
                 </Link>
               </div>
             )}
@@ -172,6 +175,17 @@ export function Navigation() {
                   </div>
                 </div>
                 <div className="mt-3 px-2 space-y-1">
+                  <Link
+                    href="/profile"
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                      isActive('/profile')
+                        ? 'text-green-600 bg-green-50'
+                        : 'text-gray-700 hover:text-green-600 hover:bg-green-50'
+                    }`}
+                  >
+                    내 정보
+                  </Link>
                   <button
                     onClick={handleLogout}
                     className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-50 transition-colors"
@@ -183,18 +197,11 @@ export function Navigation() {
             ) : (
               <div className="border-t border-gray-200 pt-4 pb-3 space-y-1">
                 <Link
-                  href="/auth/login"
+                  href="/"
                   onClick={() => setIsMenuOpen(false)}
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors"
                 >
-                  로그인
-                </Link>
-                <Link
-                  href="/auth/register"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
-                >
-                  회원가입
+                  로그인/회원가입
                 </Link>
               </div>
             )}

@@ -26,7 +26,7 @@ export interface CreateBoardData {
   title: string;
   content: string;
   author: string;
-  categoryId: number;
+  categoryId: number | string; // 문자열도 허용하여 백엔드에서 변환
   isAdminPost?: boolean;
 }
 
@@ -40,4 +40,25 @@ export interface UpdateBoardData {
 export interface CreateCategoryData {
   name: string;
   description: string;
+}
+
+export interface Comment {
+  id: number;
+  content: string;
+  author: string;
+  createdAt: string;
+  updatedAt: string;
+  userId: number;
+  boardId: number;
+  user: {
+    id: number;
+    username: string;
+    name: string;
+  };
+}
+
+export interface CreateCommentData {
+  content: string;
+  author: string;
+  boardId: number;
 }

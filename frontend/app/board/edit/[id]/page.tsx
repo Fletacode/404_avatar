@@ -12,6 +12,9 @@ interface BoardEditPageProps {
   };
 }
 
+// 동적 라우팅 설정
+export const dynamic = 'force-dynamic';
+
 export default function BoardEditPage({ params }: BoardEditPageProps) {
   const router = useRouter();
   const [board, setBoard] = useState<Board | null>(null);

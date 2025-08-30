@@ -1,6 +1,7 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { User } from './user.entity';
 import { Category } from './category.entity';
+import { Comment } from './comment.entity';
 
 @Entity('boards')
 export class Board {
@@ -27,6 +28,9 @@ export class Board {
 
   @Column({ default: 0 })
   viewCount: number;
+
+  @OneToMany(() => Comment, comment => comment.board, { cascade: true })
+  comments: Comment[];
 
   @CreateDateColumn()
   createdAt: Date;

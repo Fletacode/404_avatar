@@ -82,10 +82,10 @@ export function BoardForm({ board, isEdit = false }: BoardFormProps) {
         router.push(`/board/${board.id}`);
       } else {
         const createData: CreateBoardData = {
-          title: formData.title,
-          content: formData.content,
-          author: user.username,
-          categoryId: formData.categoryId,
+          title: formData.title.trim(),
+          content: formData.content.trim(),
+          author: user.username.trim(),
+          categoryId: Number(formData.categoryId), // 명시적으로 숫자 변환
           isAdminPost: user.isAdmin ? formData.isAdminPost : false,
         };
         const newBoard = await boardApi.createBoard(createData);
@@ -218,7 +218,8 @@ export function BoardForm({ board, isEdit = false }: BoardFormProps) {
             type="submit"
             disabled={loading}
             className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50"
-          >
+
+>
             {loading ? (isEdit ? '수정 중...' : '작성 중...') : (isEdit ? '수정' : '작성')}
           </button>
         </div>

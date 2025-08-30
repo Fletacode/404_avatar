@@ -1,10 +1,14 @@
 import { BoardDetail } from '@components/BoardDetail';
+import { boardApi } from '@/lib/api';
 
 interface BoardDetailPageProps {
   params: {
     id: string;
   };
 }
+
+// 동적 라우팅 설정
+export const dynamic = 'force-dynamic';
 
 export default function BoardDetailPage({ params }: BoardDetailPageProps) {
   const boardId = parseInt(params.id, 10);

@@ -11,6 +11,9 @@ interface CategoryEditPageProps {
   };
 }
 
+// 동적 라우팅 설정
+export const dynamic = 'force-dynamic';
+
 export default function CategoryEditPage({ params }: CategoryEditPageProps) {
   const [category, setCategory] = useState<Category | null>(null);
   const [loading, setLoading] = useState(true);

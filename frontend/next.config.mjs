@@ -6,8 +6,8 @@ const __dirname = path.dirname(__filename);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // output: 'export', // 개발 환경에서는 비활성화 (동적 라우팅을 위해)
+  trailingSlash: false, // export 모드가 아닐 때는 false로 설정
   images: {
     unoptimized: true
   },

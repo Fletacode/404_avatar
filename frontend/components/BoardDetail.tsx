@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { boardApi } from '@/lib/api';
 import type { Board } from '@/types/board';
 import { useAuth } from '@/contexts/AuthContext';
+import { CommentSection } from './CommentSection';
 
 interface BoardDetailProps {
   boardId: number;
@@ -160,6 +161,11 @@ export function BoardDetail({ boardId }: BoardDetailProps) {
             dangerouslySetInnerHTML={{ __html: board.content.replace(/\n/g, '<br>') }}
           />
         </div>
+      </div>
+
+      {/* 댓글 섹션 */}
+      <div className="bg-white rounded-lg shadow-lg">
+        <CommentSection boardId={boardId} />
       </div>
 
       {/* 하단 네비게이션 */}

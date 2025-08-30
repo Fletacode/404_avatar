@@ -1,4 +1,4 @@
-IMAGE_PATH=user_avatar_1756575482979.png
+IMAGE_PATH=user_avatar_1756576111496.png
 PROMPT=당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
-USER_ID=2
-USERNAME=test2
+USER_ID=6
+USERNAME=최현택

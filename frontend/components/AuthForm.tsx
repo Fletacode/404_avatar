@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { LoginData, RegisterData } from "@/types/auth";
+import { RelationshipToDeceased, PsychologicalSupportLevel, RELATIONSHIP_LABELS, SUPPORT_LEVEL_LABELS } from "@/types/constants";
 
 interface AuthFormProps {
   onLogin: (data: LoginData) => void;
@@ -15,9 +16,18 @@ export function AuthForm({ onLogin, onRegister, isLoading, error }: AuthFormProp
   const [isLoginMode, setIsLoginMode] = useState(true);
   const [formData, setFormData] = useState({
     username: "",
+    name: "",
     email: "",
     password: "",
     confirmPassword: "",
+    // 설문조사 관련 필드들
+    birthDate: "",
+    relationshipToDeceased: "",
+    relationshipDescription: "",
+    psychologicalSupportLevel: "",
+    meetingParticipationDesire: false,
+    personalNotes: "",
+    privacyAgreement: false,
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,17 +41,26 @@ export function AuthForm({ onLogin, onRegister, isLoading, error }: AuthFormProp
     } else {
       onRegister({
         username: formData.username,
+        name: formData.name,
         email: formData.email,
         password: formData.password,
         confirmPassword: formData.confirmPassword,
+        birthDate: formData.birthDate,
+        relationshipToDeceased: formData.relationshipToDeceased,
+        relationshipDescription: formData.relationshipDescription,
+        psychologicalSupportLevel: formData.psychologicalSupportLevel,
+        meetingParticipationDesire: formData.meetingParticipationDesire,
+        personalNotes: formData.personalNotes,
+        privacyAgreement: formData.privacyAgreement,
       });
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value, type } = e.target;
     setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 
@@ -49,9 +68,17 @@ export function AuthForm({ onLogin, onRegister, isLoading, error }: AuthFormProp
     setIsLoginMode(!isLoginMode);
     setFormData({
       username: "",
+      name: "",
       email: "",
       password: "",
       confirmPassword: "",
+      birthDate: "",
+      relationshipToDeceased: "",
+      relationshipDescription: "",
+      psychologicalSupportLevel: "",
+      meetingParticipationDesire: false,
+      personalNotes: "",
+      privacyAgreement: false,
     });
   };
 
@@ -83,21 +110,152 @@ export function AuthForm({ onLogin, onRegister, isLoading, error }: AuthFormProp
 
       <form onSubmit={handleSubmit} className="space-y-4">
         {!isLoginMode && (
-          <div>
-            <label htmlFor="username" className="block text-sm font-medium text-gray-300 mb-1">
-              사용자명
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              value={formData.username}
-              onChange={handleInputChange}
-              required={!isLoginMode}
-              className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              placeholder="사용자명을 입력하세요"
-            />
-          </div>
+          <>
+            <div>
+              <label htmlFor="username" className="block text-sm font-medium text-gray-300 mb-1">
+                사용자명
+              </label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                value={formData.username}
+                onChange={handleInputChange}
+                required={!isLoginMode}
+                className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="사용자명을 입력하세요"
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                이름
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required={!isLoginMode}
+                className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="실명을 입력하세요"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="birthDate" className="block text-sm font-medium text-gray-300 mb-1">
+                생년월일
+              </label>
+              <input
+                type="date"
+                id="birthDate"
+                name="birthDate"
+                value={formData.birthDate}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="relationshipToDeceased" className="block text-sm font-medium text-gray-300 mb-1">
+                고인과의 관계
+              </label>
+              <select
+                id="relationshipToDeceased"
+                name="relationshipToDeceased"
+                value={formData.relationshipToDeceased}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="">선택하세요</option>
+                {Object.entries(RELATIONSHIP_LABELS).map(([key, label]) => (
+                  <option key={key} value={key}>
+                    {label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {formData.relationshipToDeceased === RelationshipToDeceased.OTHER && (
+              <div>
+                <label htmlFor="relationshipDescription" className="block text-sm font-medium text-gray-300 mb-1">
+                  관계 설명
+                </label>
+                <input
+                  type="text"
+                  id="relationshipDescription"
+                  name="relationshipDescription"
+                  value={formData.relationshipDescription}
+                  onChange={handleInputChange}
+                  className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="고인과의 관계를 자세히 설명해주세요"
+                />
+              </div>
+            )}
+
+            <div>
+              <label htmlFor="psychologicalSupportLevel" className="block text-sm font-medium text-gray-300 mb-1">
+                심리적 지원 필요도
+              </label>
+              <select
+                id="psychologicalSupportLevel"
+                name="psychologicalSupportLevel"
+                value={formData.psychologicalSupportLevel}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="">선택하세요</option>
+                {Object.entries(SUPPORT_LEVEL_LABELS).map(([key, label]) => (
+                  <option key={key} value={key}>
+                    {label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className="flex items-center text-sm text-gray-300">
+                <input
+                  type="checkbox"
+                  name="meetingParticipationDesire"
+                  checked={formData.meetingParticipationDesire}
+                  onChange={handleInputChange}
+                  className="mr-2 rounded"
+                />
+                그룹 모임 참여를 희망합니다
+              </label>
+            </div>
+
+            <div>
+              <label htmlFor="personalNotes" className="block text-sm font-medium text-gray-300 mb-1">
+                개인적인 메모 (선택사항)
+              </label>
+              <textarea
+                id="personalNotes"
+                name="personalNotes"
+                value={formData.personalNotes}
+                onChange={handleInputChange}
+                rows={3}
+                className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="추가로 전하고 싶은 말씀이나 특별한 상황이 있다면 적어주세요"
+              />
+            </div>
+
+            <div>
+              <label className="flex items-center text-sm text-gray-300">
+                <input
+                  type="checkbox"
+                  name="privacyAgreement"
+                  checked={formData.privacyAgreement}
+                  onChange={handleInputChange}
+                  required={!isLoginMode}
+                  className="mr-2 rounded"
+                />
+                <span className="text-red-400">*</span> 개인정보 수집 및 이용에 동의합니다
+              </label>
+            </div>
+          </>
         )}
 
         <div>

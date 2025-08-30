@@ -876,3 +876,87 @@
 2025-08-31 02:38:07,409 - hedra-avatar-example - INFO - Hedra avatar session started successfully
 2025-08-31 02:38:08,052 - hedra-avatar-example - INFO - Agent session started successfully
 2025-08-31 02:38:08,052 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 02:46:11,554 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 02:46:11,554 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 02:48:18,094 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 02:48:18,094 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 02:48:22,605 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ac48e61c-a02d-47a2-b2d6-61790dc4f321
+2025-08-31 02:48:22,605 - hedra-avatar-example - INFO - Loading configuration from file: /Users/chris/Documents/GitHub/404/backend/assets/agent_config.txt
+2025-08-31 02:48:22,605 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ac48e61c-a02d-47a2-b2d6-61790dc4f321
+2025-08-31 02:48:22,605 - hedra-avatar-example - INFO - Loading configuration from file: /Users/chris/Documents/GitHub/404/backend/assets/agent_config.txt
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - Image path: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - User ID: 6
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - Username: 최현택
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - Image path: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,608 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - User ID: 6
+2025-08-31 02:48:22,607 - hedra-avatar-example - INFO - Config file - Username: 최현택
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO -   Image path: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,608 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 02:48:22,610 - hedra-avatar-example - INFO -   User ID: 6
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO -   Image path: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,610 - hedra-avatar-example - INFO -   Username: 최현택
+2025-08-31 02:48:22,609 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:22,610 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:22,611 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,610 - hedra-avatar-example - INFO -   User ID: 6
+2025-08-31 02:48:22,610 - hedra-avatar-example - INFO -   Username: 최현택
+2025-08-31 02:48:22,611 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,610 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:22,611 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,611 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 02:48:22,654 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 02:48:22,654 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 02:48:22,654 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 02:48:22,654 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 02:48:25,063 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 02:48:25,063 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 02:48:25,940 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 02:48:25,940 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 02:48:32,000 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_8ba49d89-3b2b-4962-8af0-ee9b751d6ebe
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Loading configuration from file: /Users/chris/Documents/GitHub/404/backend/assets/agent_config.txt
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - Image path: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,000 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_8ba49d89-3b2b-4962-8af0-ee9b751d6ebe
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - User ID: 6
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - Username: 최현택
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   Image path: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   User ID: 6
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   Username: 최현택
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,003 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Loading configuration from file: /Users/chris/Documents/GitHub/404/backend/assets/agent_config.txt
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - Image path: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - User ID: 6
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Config file - Username: 최현택
+2025-08-31 02:48:32,001 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   Image path: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   User ID: 6
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO -   Username: 최현택
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 02:48:32,002 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,003 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/user_avatar_1756576111496.png
+2025-08-31 02:48:32,024 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1225, 1829) pixels, mode: RGBA
+2025-08-31 02:48:32,025 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756576111496.png
+2025-08-31 02:48:32,024 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1225, 1829) pixels, mode: RGBA
+2025-08-31 02:48:32,025 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756576111496.png
+2025-08-31 02:48:32,530 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 02:48:32,531 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 03:19:20,949 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 03:19:20,949 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
