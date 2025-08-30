@@ -4,7 +4,7 @@ import { CloseIcon } from "@components/CloseIcon";
 import { NoAgentNotification } from "@components/NoAgentNotification";
 import TranscriptionView from "@components/TranscriptionView";
 import { AuthForm } from "@components/AuthForm";
-import { UserProfile } from "@components/UserProfile";
+
 import { AgentConfigModal } from "@components/AgentConfigModal";
 import { AgentLogsModal } from "@components/AgentLogsModal";
 import {
@@ -154,6 +154,7 @@ export default function Page() {
         </div>
       </main>
     );
+    
   }
 
   // 인증되지 않은 경우 로그인/회원가입 폼 표시
@@ -175,29 +176,103 @@ export default function Page() {
 
       // 인증된 사용자의 메인 화면
   return (
-    <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)] relative">
-      <UserProfile user={user} onLogout={handleLogout} />
-      
-      {/* 컨트롤 버튼들 */}
-      <div className="absolute top-4 left-4 flex flex-col gap-2">
-        
-        <button
-          onClick={handleCleanupAgent}
-          className="bg-red-800/90 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm hover:bg-red-700 transition-colors"
-        >
-          🗑️ Agent 정리
-        </button>
-      </div>
-      
-      <div className="w-full flex justify-center mb-8">
-        <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-16 w-auto" />
-      </div>
-      
-      <RoomContext.Provider value={room}>
-        <div className="lk-room-container max-w-[1024px] w-[90vw] mx-auto max-h-[90vh]">
-          <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
+    <div className="min-h-screen bg-gray-50">
+      {/* 히어로 섹션 */}
+      <div className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="text-center">
+            <div className="flex justify-center mb-8">
+              <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-20 w-auto" />
+            </div>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              안녕하세요, {user.username}님!
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              AI 아바타와 대화하고 커뮤니티에 참여해보세요.
+            </p>
+            
+            {/* AI 아바타 대화 섹션 */}
+            <div className="bg-gray-900 rounded-lg p-8 mb-8" data-lk-theme="default">
+              <RoomContext.Provider value={room}>
+                <div className="lk-room-container max-w-[1024px] mx-auto">
+                  <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
+                </div>
+              </RoomContext.Provider>
+            </div>
+            
+            {/* 컨트롤 버튼들 */}
+            <div className="flex justify-center gap-4 mb-8">
+              <button
+                onClick={handleCleanupAgent}
+                className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
+              >
+                🗑️ Agent 정리
+              </button>
+              <button
+                onClick={() => setIsLogsModalOpen(true)}
+                className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+              >
+                📊 로그 보기
+              </button>
+            </div>
+          </div>
         </div>
-      </RoomContext.Provider>
+      </div>
+
+      {/* 기능 소개 섹션 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-lg shadow p-6">
+            <div className="text-center">
+              <div className="text-3xl mb-4">💬</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">게시판</h3>
+              <p className="text-gray-600 mb-4">
+                다른 사용자들과 소통하고 정보를 공유하세요.
+              </p>
+              <a
+                href="/board"
+                className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+              >
+                게시판 보기
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow p-6">
+            <div className="text-center">
+              <div className="text-3xl mb-4">📝</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">설문조사</h3>
+              <p className="text-gray-600 mb-4">
+                유가족 지원 서비스를 위한 설문조사에 참여하세요.
+              </p>
+              <a
+                href="/survey/my"
+                className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors"
+              >
+                설문조사 참여
+              </a>
+            </div>
+          </div>
+
+          {user.isAdmin && (
+            <div className="bg-white rounded-lg shadow p-6">
+              <div className="text-center">
+                <div className="text-3xl mb-4">⚙️</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">관리자</h3>
+                <p className="text-gray-600 mb-4">
+                  시스템 관리 및 통계 정보를 확인하세요.
+                </p>
+                <a
+                  href="/admin"
+                  className="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors"
+                >
+                  관리자 패널
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
 
       <AgentConfigModal
         isOpen={isConfigModalOpen}
@@ -210,7 +285,7 @@ export default function Page() {
         isOpen={isLogsModalOpen}
         onClose={() => setIsLogsModalOpen(false)}
       />
-    </main>
+    </div>
   );
 }
 

@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { Navigation } from "@components/Navigation";
 
 const publicSans400 = Public_Sans({
   weight: "400",
@@ -10,7 +11,8 @@ const publicSans400 = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Voice Assistant",
+  title: "Hedra Avatar App",
+  description: "AI voice assistant with virtual avatars and community features",
 };
 
 export default function RootLayout({
@@ -19,10 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`h-full ${publicSans400.className}`}>
-      <body className="h-full">
+    <html lang="ko" className={`h-full ${publicSans400.className}`}>
+      <body className="h-full bg-gray-50">
         <AuthProvider>
-          {children}
+          <div className="h-full flex flex-col">
+            <Navigation />
+            <main className="flex-1">
+              {children}
+            </main>
+          </div>
         </AuthProvider>
       </body>
     </html>

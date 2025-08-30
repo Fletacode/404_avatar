@@ -3,6 +3,7 @@ export interface User {
   username: string;
   email: string;
   createdAt: string;
+  isAdmin?: boolean;
 }
 
 export interface AuthState {
