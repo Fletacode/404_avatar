@@ -54,7 +54,7 @@ export default function Page() {
     setIsStartingAgent(true);
     try {
       // 1. Start the agent with custom configuration
-      const startAgentResponse = await fetch("/api/start-agent", {
+      const startAgentResponse = await fetch("/api/start-agent/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

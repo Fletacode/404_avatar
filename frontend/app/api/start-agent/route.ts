@@ -84,7 +84,7 @@ export async function POST(request: Request) {
     console.log(`Prompt: ${prompt}`);
 
     // spawn을 사용하여 프로세스 시작
-    const child = spawn('/bin/bash', ['-c', `cd "${backendDir}" && source venv/bin/activate && python agent_worker.py start`], {
+    const child = spawn('/bin/bash', ['-c', `cd "${backendDir}" && source venv/bin/activate && python3 agent_worker.py start`], {
       env: {
         ...process.env,
         AGENT_IMAGE_PATH: absoluteImagePath,
