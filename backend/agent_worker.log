@@ -138,3 +138,495 @@
 2025-08-31 01:12:56,399 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
 2025-08-31 01:15:17,558 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
 2025-08-31 01:15:17,559 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:25:01,025 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_04b3f8d9-e81b-4057-98f0-5aa4ce12d13a
+2025-08-31 01:25:01,028 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:25:01,028 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:25:01,025 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_04b3f8d9-e81b-4057-98f0-5aa4ce12d13a
+2025-08-31 01:25:01,028 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:25:01,028 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:25:01,030 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:25:01,029 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,035 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,035 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,030 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:25:01,035 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,035 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:25:01,335 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:25:01,335 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:25:01,335 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:25:01,335 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:25:03,344 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:25:03,344 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:25:04,178 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:25:04,178 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:27:23,488 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_7cb45e40-6a01-4ac4-b37a-f05ed40a2057
+2025-08-31 01:27:23,491 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:27:23,492 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:27:23,492 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:27:23,488 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_7cb45e40-6a01-4ac4-b37a-f05ed40a2057
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:27:23,491 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:27:23,492 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:27:23,492 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,494 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:27:23,496 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,493 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,497 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,494 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:27:23,496 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,497 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:27:23,536 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:27:23,536 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:27:23,536 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:27:23,536 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:27:25,371 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:27:25,371 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:27:26,126 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:27:26,126 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:32:05,353 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ab2e88b9-d88a-47b0-bdb6-e707cab8c89c
+2025-08-31 01:32:05,361 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:32:05,353 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ab2e88b9-d88a-47b0-bdb6-e707cab8c89c
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,361 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:32:05,363 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:32:05,367 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,367 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:32:05,362 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,363 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:32:05,367 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,367 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:05,410 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:32:05,410 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:32:05,410 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:32:05,410 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:32:06,584 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 01:32:06,584 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:32:07,566 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:32:07,566 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:32:08,302 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_e1fdf89b-3b80-49e7-b06a-874b98c8e00c
+2025-08-31 01:32:08,308 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:32:08,308 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:32:08,302 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_e1fdf89b-3b80-49e7-b06a-874b98c8e00c
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:32:08,308 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:32:08,308 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:32:08,317 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,317 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,310 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:32:08,317 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,317 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:32:08,357 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:32:08,357 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:32:08,357 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:32:08,357 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:32:08,416 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:32:08,416 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:32:10,351 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:32:10,351 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:32:11,103 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:32:11,103 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:35:40,233 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_6b84d8cf-9f94-4ae6-9216-2ee710d80f23
+2025-08-31 01:35:40,240 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:35:40,242 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:35:40,242 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,233 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_6b84d8cf-9f94-4ae6-9216-2ee710d80f23
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:35:40,240 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:35:40,242 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:35:40,242 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,243 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:35:40,254 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,254 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,254 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,254 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:35:40,446 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:35:40,447 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:35:40,446 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:35:40,447 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:35:42,637 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:35:42,637 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:35:43,611 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:35:43,611 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:36:45,768 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_965f5dad-3b00-4ab9-83ed-f2408f493445
+2025-08-31 01:36:45,776 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:36:45,776 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:36:45,777 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,768 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_965f5dad-3b00-4ab9-83ed-f2408f493445
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:36:45,776 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:36:45,776 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:36:45,777 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,788 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,778 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:36:45,788 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,788 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,788 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:36:45,840 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:36:45,840 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:36:45,840 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:36:45,840 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:36:48,117 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:36:48,117 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:36:48,902 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:36:48,902 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:37:09,401 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_07771e3d-aa47-4268-a829-0cba232188dd
+2025-08-31 01:37:09,404 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:37:09,401 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_07771e3d-aa47-4268-a829-0cba232188dd
+2025-08-31 01:37:09,405 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:37:09,404 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:37:09,406 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,405 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:37:09,406 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:37:09,406 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:37:09,406 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,406 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:37:09,407 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:37:09,406 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:37:09,407 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,407 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:37:09,407 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:37:09,411 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,407 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,411 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,407 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:37:09,411 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,411 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:09,452 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:37:09,452 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:37:09,452 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:37:09,452 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:37:11,434 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:37:11,434 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:37:12,180 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:37:12,180 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:37:55,791 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_e72ef9b0-69df-4f2c-8fda-a9892c392d47
+2025-08-31 01:37:55,800 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:37:55,800 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:37:55,791 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_e72ef9b0-69df-4f2c-8fda-a9892c392d47
+2025-08-31 01:37:55,800 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:37:55,800 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are a helpful assistant
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,802 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:37:55,801 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,808 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,802 - hedra-avatar-example - INFO - Using agent instructions: You are a helpful assistant
+2025-08-31 01:37:55,809 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,808 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,809 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/fred.png
+2025-08-31 01:37:55,966 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:37:55,966 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:37:55,966 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:37:55,966 - hedra-avatar-example - INFO - Selected avatar image: fred.png
+2025-08-31 01:37:56,361 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 01:37:56,362 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:37:57,963 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:37:57,963 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:37:58,868 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:37:58,868 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:40:11,241 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 01:40:11,242 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:40:50,939 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 01:40:50,940 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:41:30,848 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 01:41:30,849 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:42:34,119 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_f55e5a51-baab-4a44-9572-856cddf720d3
+2025-08-31 01:42:34,121 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:42:34,121 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:42:34,119 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_f55e5a51-baab-4a44-9572-856cddf720d3
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:42:34,121 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:42:34,121 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,123 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,122 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:42:34,123 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,123 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,123 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:42:34,140 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:42:34,140 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:42:34,140 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:42:34,140 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:42:36,652 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:42:36,652 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:42:37,468 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:42:37,468 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:43:05,984 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_0cfc0b85-9426-44ac-810c-1559d44cfcae
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:43:05,984 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_0cfc0b85-9426-44ac-810c-1559d44cfcae
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,985 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:43:05,987 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,987 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,986 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:43:05,987 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:05,987 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:06,008 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:43:06,008 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:43:06,008 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:43:06,008 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:43:08,048 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_781d883b-2bc8-4aea-93d2-ee5af3b0b45e
+2025-08-31 01:43:08,049 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:43:08,048 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_781d883b-2bc8-4aea-93d2-ee5af3b0b45e
+2025-08-31 01:43:08,049 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,049 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:43:08,049 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:43:08,051 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:43:08,051 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:43:08,050 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:43:08,051 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,052 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,052 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,051 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:43:08,052 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,052 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:43:08,065 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:43:08,065 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:43:08,065 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:43:08,065 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:43:08,717 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 01:43:08,718 - hedra-avatar-example - INFO - Configuration will be loaded when agent connects to room
+2025-08-31 01:43:08,867 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:43:08,867 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:43:09,666 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:43:09,666 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:43:10,541 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:43:10,541 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:43:11,341 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:43:11,341 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:47:28,539 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_9efcebdb-3880-44cc-a0b4-e4c7f6965efc
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:47:28,539 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_9efcebdb-3880-44cc-a0b4-e4c7f6965efc
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,547 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,550 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,551 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,548 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:47:28,550 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,551 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:47:28,607 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:47:28,607 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:47:28,607 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:47:28,607 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:47:31,148 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:47:31,148 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:47:31,920 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:47:31,920 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:48:00,869 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ba62b82d-f639-43b8-9a6b-1c0faa4ba6ad
+2025-08-31 01:48:00,874 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:48:00,874 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:48:00,869 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ba62b82d-f639-43b8-9a6b-1c0faa4ba6ad
+2025-08-31 01:48:00,874 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,874 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:48:00,875 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:48:00,876 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,876 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:48:00,876 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,877 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,876 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:48:00,877 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,878 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,878 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:00,908 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:48:00,908 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:48:00,908 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:48:00,908 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:48:03,500 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:48:03,500 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:48:04,273 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:48:04,273 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:48:33,736 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_4e3b7f93-98b1-4e62-bb74-c5a3fa6894b2
+2025-08-31 01:48:33,739 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:48:33,736 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_4e3b7f93-98b1-4e62-bb74-c5a3fa6894b2
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:48:33,739 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:48:33,741 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,741 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:48:33,740 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:48:33,741 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,741 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,741 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:48:33,742 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,741 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,742 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:33,772 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:48:33,773 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:48:33,772 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:48:33,773 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:48:36,076 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:48:36,076 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:48:36,860 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:48:36,860 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:48:54,360 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_1dabd956-5f46-4bb9-85de-0ae18df2d718
+2025-08-31 01:48:54,364 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:48:54,360 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_1dabd956-5f46-4bb9-85de-0ae18df2d718
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:48:54,364 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:48:54,365 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:48:54,366 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,366 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:48:54,367 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,366 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,367 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,366 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:48:54,367 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,367 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:48:54,394 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:48:54,394 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:48:54,394 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:48:54,394 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:48:56,811 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:48:56,811 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:48:57,565 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:48:57,565 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:49:45,016 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_79444162-3d7f-4886-a629-d7c1f75f249d
+2025-08-31 01:49:45,019 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:49:45,019 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:49:45,016 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_79444162-3d7f-4886-a629-d7c1f75f249d
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,019 - hedra-avatar-example - INFO - Loading configuration from environment variables...
+2025-08-31 01:49:45,019 - hedra-avatar-example - INFO - Environment variables loaded:
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_PROMPT: You are Mary, a helpful assistant
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_USER_ID: 4
+2025-08-31 01:49:45,020 - hedra-avatar-example - INFO -   AGENT_USERNAME: testuser
+2025-08-31 01:49:45,021 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,021 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:49:45,022 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,022 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,021 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,021 - hedra-avatar-example - INFO - Using agent instructions: You are Mary, a helpful assistant
+2025-08-31 01:49:45,022 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,022 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/chris/Documents/GitHub/404/backend/assets/mary.png
+2025-08-31 01:49:45,046 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:49:45,046 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:49:45,046 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 01:49:45,046 - hedra-avatar-example - INFO - Selected avatar image: mary.png
+2025-08-31 01:49:47,733 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:49:47,733 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 01:49:48,497 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 01:49:48,497 - hedra-avatar-example - INFO - Agent session started successfully
