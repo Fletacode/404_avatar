@@ -5,6 +5,8 @@ import { NoAgentNotification } from "@components/NoAgentNotification";
 import TranscriptionView from "@components/TranscriptionView";
 import { AuthForm } from "@components/AuthForm";
 import { UserProfile } from "@components/UserProfile";
+import { AgentConfigModal } from "@components/AgentConfigModal";
+import { AgentLogsModal } from "@components/AgentLogsModal";
 import {
   BarVisualizer,
   DisconnectButton,
@@ -25,11 +27,52 @@ export default function Page() {
   const [room] = useState(new Room());
   const { user, isAuthenticated, login, register, logout, isLoading } = useAuth();
   const [authError, setAuthError] = useState<string>("");
+  const [isConfigModalOpen, setIsConfigModalOpen] = useState(false);
+  const [isStartingAgent, setIsStartingAgent] = useState(false);
+  const [isLogsModalOpen, setIsLogsModalOpen] = useState(false);
 
-  const onConnectButtonClicked = useCallback(async () => {
+  const handleCleanupAgent = async () => {
+    try {
+      const response = await fetch("/api/cleanup-agent", {
+        method: "POST",
+      });
+      const result = await response.json();
+      
+      if (result.success) {
+        alert("Agent 프로세스가 정리되었습니다.");
+      } else {
+        alert("정리 중 오류가 발생했습니다.");
+      }
+    } catch (error) {
+      console.error("Error cleaning up agent:", error);
+      alert("정리 중 오류가 발생했습니다.");
+    }
+  };
+
+  const startAgentWithConfig = useCallback(async (config: { imagePath: string; prompt: string }) => {
     if (!user) return;
 
+    setIsStartingAgent(true);
     try {
+      // 1. Start the agent with custom configuration
+      const startAgentResponse = await fetch("/api/start-agent", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          imagePath: config.imagePath,
+          prompt: config.prompt,
+          userId: user.id,
+          username: user.username,
+        }),
+      });
+
+      if (!startAgentResponse.ok) {
+        throw new Error("Failed to start agent");
+      }
+
+      // 2. Get connection details
       const url = new URL(
         process.env.NEXT_PUBLIC_CONN_DETAILS_ENDPOINT ?? "/api/connection-details",
         window.location.origin
@@ -52,13 +95,22 @@ export default function Page() {
 
       const connectionDetailsData: ConnectionDetails = await response.json();
 
+      // 3. Connect to room
       await room.connect(connectionDetailsData.serverUrl, connectionDetailsData.participantToken);
       await room.localParticipant.setMicrophoneEnabled(true);
+
+      setIsConfigModalOpen(false);
     } catch (error) {
       console.error("Connection failed:", error);
       alert("연결에 실패했습니다. 다시 시도해주세요.");
+    } finally {
+      setIsStartingAgent(false);
     }
   }, [room, user]);
+
+  const onConnectButtonClicked = useCallback(() => {
+    setIsConfigModalOpen(true);
+  }, []);
 
   const handleLogin = async (data: LoginData) => {
     setAuthError("");
@@ -121,10 +173,26 @@ export default function Page() {
     );
   }
 
-  // 인증된 사용자의 메인 화면
+      // 인증된 사용자의 메인 화면
   return (
     <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)] relative">
       <UserProfile user={user} onLogout={handleLogout} />
+      
+      {/* 컨트롤 버튼들 */}
+      <div className="absolute top-4 left-4 flex flex-col gap-2">
+        <button
+          onClick={() => setIsLogsModalOpen(true)}
+          className="bg-gray-800/90 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm hover:bg-gray-700 transition-colors"
+        >
+          🔍 Agent 로그 보기
+        </button>
+        <button
+          onClick={handleCleanupAgent}
+          className="bg-red-800/90 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm hover:bg-red-700 transition-colors"
+        >
+          🗑️ Agent 정리
+        </button>
+      </div>
       
       <div className="w-full flex justify-center mb-8">
         <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-16 w-auto" />
@@ -135,6 +203,18 @@ export default function Page() {
           <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
         </div>
       </RoomContext.Provider>
+
+      <AgentConfigModal
+        isOpen={isConfigModalOpen}
+        onClose={() => setIsConfigModalOpen(false)}
+        onStart={startAgentWithConfig}
+        isLoading={isStartingAgent}
+      />
+
+      <AgentLogsModal
+        isOpen={isLogsModalOpen}
+        onClose={() => setIsLogsModalOpen(false)}
+      />
     </main>
   );
 }

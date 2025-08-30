@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "trap 'node cleanup.js' EXIT INT TERM && next dev",
+    "dev:safe": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format:check": "prettier --check .",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "cleanup": "node cleanup.js"
   },
   "dependencies": {
     "@livekit/components-react": "^2.9.3",
