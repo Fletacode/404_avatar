@@ -84,28 +84,7 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
               아바타 이미지
             </label>
             
-            {/* 사전 정의된 아바타 선택 */}
-            <div className="mb-4">
-              <h4 className="text-sm font-medium text-gray-600 mb-2">사전 정의된 아바타</h4>
-              <div className="grid grid-cols-2 gap-3">
-                {presetImages.map((preset) => (
-                  <button
-                    key={preset.name}
-                    type="button"
-                    onClick={() => handlePresetImageSelect(preset.name)}
-                    className={`p-3 border-2 rounded-lg text-center transition-colors ${
-                      selectedImageType === "preset" && imagePath === preset.name
-                        ? "border-blue-500 bg-blue-50 text-blue-700"
-                        : "border-gray-300 hover:border-gray-400"
-                    }`}
-                    disabled={isLoading}
-                  >
-                    <div className="font-medium">{preset.displayName}</div>
-                    <div className="text-xs text-gray-500">{preset.name}</div>
-                  </button>
-                ))}
-              </div>
-            </div>
+            
 
             {/* 커스텀 이미지 업로드 */}
             <div>
@@ -185,14 +164,7 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
               초기화
             </button>
             <div className="space-x-3">
-              <button
-                type="button"
-                onClick={onClose}
-                className="px-4 py-2 text-gray-600 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors"
-                disabled={isLoading}
-              >
-                취소
-              </button>
+              
               <button
                 type="submit"
                 className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
@@ -207,6 +179,8 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
                   <span>대화 시작</span>
                 )}
               </button>
+              
+
             </div>
           </div>
         </form>

@@ -180,12 +180,7 @@ export default function Page() {
       
       {/* 컨트롤 버튼들 */}
       <div className="absolute top-4 left-4 flex flex-col gap-2">
-        <button
-          onClick={() => setIsLogsModalOpen(true)}
-          className="bg-gray-800/90 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm hover:bg-gray-700 transition-colors"
-        >
-          🔍 Agent 로그 보기
-        </button>
+        
         <button
           onClick={handleCleanupAgent}
           className="bg-red-800/90 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm hover:bg-red-700 transition-colors"
