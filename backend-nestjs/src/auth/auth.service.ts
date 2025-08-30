@@ -55,16 +55,22 @@ export class AuthService {
   async login(loginDto: LoginDto): Promise<{ access_token: string; user: Partial<User> }> {
     const { username, password } = loginDto;
 
-    // 사용자 찾기
-    const user = await this.userRepository.findOne({ where: { username } });
+    // 사용자 찾기 (username 또는 email로 검색)
+    let user = await this.userRepository.findOne({ where: { username } });
+    
+    // username으로 찾지 못한 경우 email로 검색
     if (!user) {
-      throw new UnauthorizedException('잘못된 사용자명 또는 비밀번호입니다.');
+      user = await this.userRepository.findOne({ where: { email: username } });
+    }
+    
+    if (!user) {
+      throw new UnauthorizedException('잘못된 사용자명/이메일 또는 비밀번호입니다.');
     }
 
     // 비밀번호 확인
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      throw new UnauthorizedException('잘못된 사용자명 또는 비밀번호입니다.');
+      throw new UnauthorizedException('잘못된 사용자명/이메일 또는 비밀번호입니다.');
     }
 
     // JWT 토큰 생성

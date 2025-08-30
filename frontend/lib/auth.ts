@@ -40,8 +40,25 @@ export const authService = {
 
       return { success: true, message: '로그인 성공', user };
     } catch (error) {
-      const message = error instanceof ApiError ? error.message : '로그인에 실패했습니다.';
-      return { success: false, message };
+      console.error('Login error:', error);
+      
+      if (error instanceof ApiError) {
+        if (error.status === 401) {
+          return { success: false, message: '이메일 또는 비밀번호가 올바르지 않습니다.' };
+        } else if (error.status === 404) {
+          return { success: false, message: '사용자를 찾을 수 없습니다. 회원가입을 먼저 진행해주세요.' };
+        } else if (error.status === 0 || error.status >= 500) {
+          return { success: false, message: '서버에 연결할 수 없습니다. 백엔드가 실행 중인지 확인해주세요.' };
+        } else {
+          return { success: false, message: `로그인 오류: ${error.message}` };
+        }
+      }
+      
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        return { success: false, message: '백엔드 서버에 연결할 수 없습니다. 백엔드가 실행 중인지 확인해주세요.' };
+      }
+      
+      return { success: false, message: '로그인에 실패했습니다. 잠시 후 다시 시도해주세요.' };
     }
   },
 
@@ -72,8 +89,25 @@ export const authService = {
 
       return { success: true, message: '회원가입 성공', user };
     } catch (error) {
-      const message = error instanceof ApiError ? error.message : '회원가입에 실패했습니다.';
-      return { success: false, message };
+      console.error('Register error:', error);
+      
+      if (error instanceof ApiError) {
+        if (error.status === 409) {
+          return { success: false, message: '이미 존재하는 사용자명 또는 이메일입니다.' };
+        } else if (error.status === 400) {
+          return { success: false, message: '입력 정보가 올바르지 않습니다. 다시 확인해주세요.' };
+        } else if (error.status === 0 || error.status >= 500) {
+          return { success: false, message: '서버에 연결할 수 없습니다. 백엔드가 실행 중인지 확인해주세요.' };
+        } else {
+          return { success: false, message: `회원가입 오류: ${error.message}` };
+        }
+      }
+      
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        return { success: false, message: '백엔드 서버에 연결할 수 없습니다. 백엔드가 실행 중인지 확인해주세요.' };
+      }
+      
+      return { success: false, message: '회원가입에 실패했습니다. 잠시 후 다시 시도해주세요.' };
     }
   },
 

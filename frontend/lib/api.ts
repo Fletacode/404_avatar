@@ -13,20 +13,37 @@ export class ApiError extends Error {
 async function apiCall<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const url = `${API_BASE_URL}${endpoint}`;
   
-  const response = await fetch(url, {
-    headers: {
-      'Content-Type': 'application/json',
-      ...options.headers,
-    },
-    ...options,
-  });
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        ...options.headers,
+      },
+      ...options,
+    });
 
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({ message: 'Unknown error' }));
-    throw new ApiError(response.status, errorData.message || 'API Error');
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ message: 'Unknown error' }));
+      throw new ApiError(response.status, errorData.message || 'API Error');
+    }
+
+    return response.json();
+  } catch (error) {
+    // fetch 자체가 실패한 경우 (네트워크 오류, CORS 오류 등)
+    if (error instanceof TypeError) {
+      if (error.message.includes('fetch')) {
+        throw new ApiError(0, '백엔드 서버에 연결할 수 없습니다. 백엔드가 실행 중인지 확인해주세요.');
+      }
+    }
+    
+    // 이미 ApiError인 경우 그대로 전달
+    if (error instanceof ApiError) {
+      throw error;
+    }
+    
+    // 기타 오류
+    throw new ApiError(500, '알 수 없는 오류가 발생했습니다.');
   }
-
-  return response.json();
 }
 
 // 인증된 API 호출

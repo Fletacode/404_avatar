@@ -82,94 +82,57 @@ cd ../backend-nestjs
 npm install
 ```
 
-#### 2. 애플리케이션 실행
+## 🚀 실행 방법
 
-**방법 1: 개별 실행**
-
+### 1. 프론트엔드 실행
 ```bash
-# 프론트엔드 실행 (터미널 1)
-cd frontend
-pnpm dev
-
-# NestJS 백엔드 실행 (터미널 2)
-cd backend-nestjs
-npm run start:dev
-
-# AI Agent 실행 (터미널 3)
-cd backend
-python agent_worker.py start
-```
-
-**방법 2: 스크립트 사용**
-
-```bash
-# 프론트엔드 실행
+# 프론트엔드 의존성 설치 및 실행
 npm run start-app
+# 또는
+cd frontend && pnpm install && pnpm dev
+```
 
-# NestJS 백엔드 실행
-npm run start-backend
-
-# AI Agent 실행
+### 2. AI 에이전트 실행
+```bash
+# Python 에이전트 의존성 설치 및 실행
 npm run start-agent
+# 또는
+cd backend && pip install -r requirements.txt && python agent_worker.py start
 ```
 
-#### 3. 브라우저에서 접속
-
-- **프론트엔드**: `http://localhost:3000`
-- **NestJS 백엔드**: `http://localhost:3001`
-
-## 🗃️ 데이터 모델
-
-### User (사용자)
-```typescript
-- id: number (PK)
-- username: string (고유)
-- password: string (암호화)
-- name: string
-- email: string
-- isAdmin: boolean
-- createdAt: Date
+### 3. NestJS 백엔드 실행 (중요!)
+```bash
+# NestJS 백엔드 의존성 설치 및 실행
+npm run start-backend
+# 또는
+cd backend-nestjs && npm install && npm run start:dev
 ```
 
-### Board (게시글)
-```typescript
-- id: number (PK)
-- title: string
-- content: string (TEXT)
-- author: string
-- user: User (FK)
-- category: Category (FK)
-- isAdminPost: boolean
-- viewCount: number
-- createdAt: Date
-- updatedAt: Date
+**⚠️ 주의사항**: 로그인/회원가입 기능을 사용하려면 반드시 NestJS 백엔드를 먼저 실행해야 합니다!
+
+### 4. 환경 변수 설정
+프론트엔드에서 `.env.local` 파일을 생성하고 다음을 설정하세요:
+```bash
+# 백엔드 API URL (중요!)
+NEXT_PUBLIC_API_URL=http://localhost:3001
+
+# 기타 필요한 환경 변수들...
 ```
 
-### Category (카테고리)
-```typescript
-- id: number (PK)
-- name: string (고유)
-- description: string
-- boards: Board[]
-```
+## 🔧 문제 해결
 
-### FamilySurvey (유가족 설문조사)
-```typescript
-- id: number (PK)
-- user: User (OneToOne FK)
-- birthDate: Date
-- relationshipToDeceased: enum (SPOUSE, CHILD, PARENT, SIBLING, OTHER)
-- relationshipDescription: string
-- psychologicalSupportLevel: enum (HIGH, MEDIUM, LOW, NONE)
-- meetingParticipationDesire: boolean
-- personalNotes: string (TEXT)
-- privacyAgreement: boolean
-- surveyCompleted: boolean
-- createdAt: Date
-- updatedAt: Date
-```
+### 로그인/회원가입이 안 되는 경우
+1. **백엔드가 실행 중인지 확인**: `npm run start-backend` 실행
+2. **포트 확인**: 백엔드가 3001 포트에서 실행되고 있는지 확인
+3. **환경 변수 확인**: `NEXT_PUBLIC_API_URL`이 올바르게 설정되었는지 확인
+4. **브라우저 콘솔 확인**: 네트워크 오류나 CORS 오류 메시지 확인
 
-## 사용 방법
+### 백엔드 연결 오류 시
+- 백엔드 서버가 실행되지 않았거나
+- 포트가 이미 사용 중이거나
+- 환경 변수가 잘못 설정되었을 수 있습니다
+
+## 📱 주요 기능
 
 1. **회원가입/로그인**: 처음 접속 시 계정을 생성하거나 로그인하세요.
 

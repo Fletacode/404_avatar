@@ -4,7 +4,6 @@ import { CloseIcon } from "@components/CloseIcon";
 import { NoAgentNotification } from "@components/NoAgentNotification";
 import TranscriptionView from "@components/TranscriptionView";
 import { AuthForm } from "@components/AuthForm";
-
 import { AgentConfigModal } from "@components/AgentConfigModal";
 import { AgentLogsModal } from "@components/AgentLogsModal";
 import {

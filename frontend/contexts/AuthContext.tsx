@@ -21,19 +21,72 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // 초기 로딩 시 저장된 사용자 정보 확인
-    const currentUser = authService.getCurrentUser();
-    setAuthState({
-      user: currentUser,
-      isAuthenticated: !!currentUser,
-      isLoading: false,
-    });
+    const initializeAuth = async () => {
+      try {
+        const currentUser = authService.getCurrentUser();
+        if (currentUser) {
+          // 토큰이 있으면 백엔드에서 사용자 정보 재확인
+          try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/auth/profile`, {
+              headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`,
+              },
+            });
+            
+            if (response.ok) {
+              const userData = await response.json();
+              setAuthState({
+                user: {
+                  id: userData.id.toString(),
+                  username: userData.username,
+                  email: userData.email,
+                  createdAt: userData.createdAt,
+                  isAdmin: userData.isAdmin,
+                },
+                isAuthenticated: true,
+                isLoading: false,
+              });
+            } else {
+              // 토큰이 유효하지 않으면 로그아웃
+              authService.logout();
+              setAuthState({
+                user: null,
+                isAuthenticated: false,
+                isLoading: false,
+              });
+            }
+          } catch (error) {
+            // 네트워크 오류 시 로컬 스토리지 정보 사용
+            setAuthState({
+              user: currentUser,
+              isAuthenticated: true,
+              isLoading: false,
+            });
+          }
+        } else {
+          setAuthState({
+            user: null,
+            isAuthenticated: false,
+            isLoading: false,
+          });
+        }
+      } catch (error) {
+        setAuthState({
+          user: null,
+          isAuthenticated: false,
+          isLoading: false,
+        });
+      }
+    };
+
+    initializeAuth();
   }, []);
 
   const login = async (data: LoginData): Promise<{ success: boolean; message: string }> => {
     setAuthState(prev => ({ ...prev, isLoading: true }));
     
     try {
-      const result = authService.login(data);
+      const result = await authService.login(data);
       
       if (result.success && result.user) {
         setAuthState({
@@ -56,7 +109,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setAuthState(prev => ({ ...prev, isLoading: true }));
     
     try {
-      const result = authService.register(data);
+      const result = await authService.register(data);
       
       if (result.success && result.user) {
         setAuthState({

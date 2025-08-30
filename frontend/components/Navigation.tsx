@@ -88,7 +88,7 @@ export function Navigation() {
             ) : (
               <div className="flex items-center space-x-4">
                 <Link
-                  href="/auth/login"
+                  href="/"
                   className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
                 >
                   로그인

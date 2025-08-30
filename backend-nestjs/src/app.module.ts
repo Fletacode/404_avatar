@@ -8,6 +8,7 @@ import { User } from './entities/user.entity';
 import { Board } from './entities/board.entity';
 import { Category } from './entities/category.entity';
 import { FamilySurvey } from './entities/family-survey.entity';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -25,7 +26,7 @@ import { FamilySurvey } from './entities/family-survey.entity';
     BoardModule,
     SurveyModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}
