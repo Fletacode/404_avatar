@@ -16,7 +16,7 @@ export type ConnectionDetails = {
   participantToken: string;
 };
 
-export async function GET() {
+export async function POST(request: Request) {
   try {
     if (LIVEKIT_URL === undefined) {
       throw new Error("LIVEKIT_URL is not defined");
@@ -28,11 +28,19 @@ export async function GET() {
       throw new Error("LIVEKIT_API_SECRET is not defined");
     }
 
-    // Generate participant token
-    const participantIdentity = `voice_assistant_user_${crypto.randomUUID()}`;
+    // Get user info from request body
+    const body = await request.json();
+    const { userId, username } = body;
+
+    if (!userId || !username) {
+      return new NextResponse("User information is required", { status: 400 });
+    }
+
+    // Generate participant token with user info
+    const participantIdentity = `${username}_${userId}`;
     const roomName = `voice_assistant_room_${crypto.randomUUID()}`;
     const participantToken = await createParticipantToken(
-      { identity: participantIdentity },
+      { identity: participantIdentity, name: username },
       roomName
     );
 
@@ -41,7 +49,7 @@ export async function GET() {
       serverUrl: LIVEKIT_URL,
       roomName,
       participantToken: participantToken,
-      participantName: participantIdentity,
+      participantName: username,
     };
     const headers = new Headers({
       "Cache-Control": "no-store",

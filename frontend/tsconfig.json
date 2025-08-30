@@ -16,7 +16,10 @@
     "paths": {
       "@/*": ["app/*"], // for app/ folder (like @/layout or @/api)
       "@components/*": ["components/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@/types/*": ["types/*"],
+      "@/lib/*": ["lib/*"],
+      "@/contexts/*": ["contexts/*"]
     },
     "plugins": [
       {

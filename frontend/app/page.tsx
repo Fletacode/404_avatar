@@ -3,6 +3,8 @@
 import { CloseIcon } from "@components/CloseIcon";
 import { NoAgentNotification } from "@components/NoAgentNotification";
 import TranscriptionView from "@components/TranscriptionView";
+import { AuthForm } from "@components/AuthForm";
+import { UserProfile } from "@components/UserProfile";
 import {
   BarVisualizer,
   DisconnectButton,
@@ -16,30 +18,71 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Room, RoomEvent } from "livekit-client";
 import { useCallback, useEffect, useState } from "react";
 import type { ConnectionDetails } from "./api/connection-details/route";
+import { useAuth } from "@/contexts/AuthContext";
+import type { LoginData, RegisterData } from "@/types/auth";
 
 export default function Page() {
   const [room] = useState(new Room());
+  const { user, isAuthenticated, login, register, logout, isLoading } = useAuth();
+  const [authError, setAuthError] = useState<string>("");
 
   const onConnectButtonClicked = useCallback(async () => {
-    // Generate room connection details, including:
-    //   - A random Room name
-    //   - A random Participant name
-    //   - An Access Token to permit the participant to join the room
-    //   - The URL of the LiveKit server to connect to
-    //
-    // In real-world application, you would likely allow the user to specify their
-    // own participant name, and possibly to choose from existing rooms to join.
+    if (!user) return;
 
-    const url = new URL(
-      process.env.NEXT_PUBLIC_CONN_DETAILS_ENDPOINT ?? "/api/connection-details",
-      window.location.origin
-    );
-    const response = await fetch(url.toString());
-    const connectionDetailsData: ConnectionDetails = await response.json();
+    try {
+      const url = new URL(
+        process.env.NEXT_PUBLIC_CONN_DETAILS_ENDPOINT ?? "/api/connection-details",
+        window.location.origin
+      );
+      
+      const response = await fetch(url.toString(), {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userId: user.id,
+          username: user.username,
+        }),
+      });
 
-    await room.connect(connectionDetailsData.serverUrl, connectionDetailsData.participantToken);
-    await room.localParticipant.setMicrophoneEnabled(true);
-  }, [room]);
+      if (!response.ok) {
+        throw new Error("Failed to get connection details");
+      }
+
+      const connectionDetailsData: ConnectionDetails = await response.json();
+
+      await room.connect(connectionDetailsData.serverUrl, connectionDetailsData.participantToken);
+      await room.localParticipant.setMicrophoneEnabled(true);
+    } catch (error) {
+      console.error("Connection failed:", error);
+      alert("연결에 실패했습니다. 다시 시도해주세요.");
+    }
+  }, [room, user]);
+
+  const handleLogin = async (data: LoginData) => {
+    setAuthError("");
+    const result = await login(data);
+    if (!result.success) {
+      setAuthError(result.message);
+    }
+  };
+
+  const handleRegister = async (data: RegisterData) => {
+    setAuthError("");
+    const result = await register(data);
+    if (!result.success) {
+      setAuthError(result.message);
+    }
+  };
+
+  const handleLogout = () => {
+    logout();
+    // 룸 연결이 있다면 해제
+    if (room.state === "connected") {
+      room.disconnect();
+    }
+  };
 
   useEffect(() => {
     room.on(RoomEvent.MediaDevicesError, onDeviceFailure);
@@ -49,12 +92,44 @@ export default function Page() {
     };
   }, [room]);
 
+  // 로딩 중일 때
+  if (isLoading) {
+    return (
+      <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)]">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4"></div>
+          <p className="text-white">로딩 중...</p>
+        </div>
+      </main>
+    );
+  }
+
+  // 인증되지 않은 경우 로그인/회원가입 폼 표시
+  if (!isAuthenticated || !user) {
+    return (
+      <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)]">
+        <div className="w-full flex justify-center mb-8">
+          <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-16 w-auto" />
+        </div>
+        <AuthForm
+          onLogin={handleLogin}
+          onRegister={handleRegister}
+          isLoading={isLoading}
+          error={authError}
+        />
+      </main>
+    );
+  }
+
+  // 인증된 사용자의 메인 화면
   return (
-    // anchor
-    <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)]">
+    <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)] relative">
+      <UserProfile user={user} onLogout={handleLogout} />
+      
       <div className="w-full flex justify-center mb-8">
         <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-16 w-auto" />
       </div>
+      
       <RoomContext.Provider value={room}>
         <div className="lk-room-container max-w-[1024px] w-[90vw] mx-auto max-h-[90vh]">
           <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
