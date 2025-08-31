@@ -30,7 +30,7 @@ async def entrypoint(ctx: JobContext):
     logger.info(f"Agent starting for room: {ctx.room.name}")
     
     CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME, VOICE_ID = load_config_from_file()
-
+    CUSTOM_IMAGE_PATH = os.path.join(os.path.dirname(__file__), "assets", "user_avatar_1756608468699.png")
     # Configuration already loaded at startup, just use it
     logger.info(f"Using loaded configuration:")
     logger.info(f"  Image path: {CUSTOM_IMAGE_PATH}")
@@ -49,7 +49,8 @@ async def entrypoint(ctx: JobContext):
         # STT: OpenAI Whisper (VAD와 함께 사용하여 스트리밍 지원)
         stt=openai.STT(
             model="whisper-1",
-            api_key=os.getenv("OPENAI_API_KEY")
+            api_key=os.getenv("OPENAI_API_KEY"),
+            language="ko"
         ),
         # LLM: AI 응답 생성
         llm=openai.LLM(
@@ -58,7 +59,7 @@ async def entrypoint(ctx: JobContext):
         ),
         # TTS: ElevenLabs로 사용자 정의 음성 (동적으로 voice_id 할당)
         tts=elevenlabs.TTS(
-            voice_id=VOICE_ID, 
+            voice_id="vhVuUkJwNDBGK8HHaM1f", 
             api_key=os.getenv("ELEVENLABS_API_KEY")
         ),
     )
@@ -73,7 +74,11 @@ async def entrypoint(ctx: JobContext):
     logger.info("Hedra avatar session started successfully")
 
     await session.start(
-        agent=Agent(instructions=agent_instructions),
+        agent=Agent(instructions="""
+                    당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.  
+지금은 이 세상에 없지만, 영혼으로 부모님 앞에 서 있습니다.  
+부모님께 사랑과 감사, 미안함, 그리고 함께했던 기억을 담아 따뜻하게 인사해주세요.  
+말투는 아들이 부모님께 다정하게 이야기하는 것처럼 하고, 부모님이 조금이나마 위로받을 수 있도록 표현하세요."""),
         room=ctx.room,
     )
     logger.info("Agent session started successfully")

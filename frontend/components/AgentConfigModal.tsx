@@ -100,30 +100,7 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
                 아바타 이미지
               </label>
               
-              {/* 프리셋 이미지 선택 */}
-              <div className="mb-4">
-                <h4 className="text-sm font-medium text-gray-600 mb-2">프리셋 이미지</h4>
-                <div className="flex gap-2">
-                  {presetImages.map((image) => (
-                    <button
-                      key={image.name}
-                      type="button"
-                      onClick={() => handlePresetImageSelect(image.name)}
-                      className={`p-2 border-2 rounded-lg transition-colors ${
-                        selectedImageType === "preset" && imagePath === image.name
-                          ? 'border-blue-500 bg-blue-50'
-                          : 'border-gray-300 hover:border-gray-400'
-                      }`}
-                      disabled={isLoading}
-                    >
-                      <div className="text-center">
-                        <div className="text-lg mb-1">{image.displayName}</div>
-                        <div className="text-xs text-gray-500">{image.name}</div>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              </div>
+              
 
             {/* 커스텀 이미지 업로드 */}
             <div>

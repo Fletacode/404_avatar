@@ -1336,3 +1336,861 @@
 2025-08-31 10:34:16,206 - hedra-avatar-example - INFO - Hedra avatar session started successfully
 2025-08-31 10:34:17,054 - hedra-avatar-example - INFO - Agent session started successfully
 2025-08-31 10:34:17,054 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:37:32,239 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:37:32,240 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:37:34,110 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_c2fa885b-0fc2-40b2-81c7-72b660798a21
+2025-08-31 11:37:34,110 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:37:34,110 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_c2fa885b-0fc2-40b2-81c7-72b660798a21
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,110 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:37:34,111 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:37:34,112 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:37:34,231 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,231 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,231 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,231 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607851362.png
+2025-08-31 11:37:34,240 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (416, 376) pixels, mode: RGBA
+2025-08-31 11:37:34,240 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756607851362.png
+2025-08-31 11:37:34,240 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (416, 376) pixels, mode: RGBA
+2025-08-31 11:37:34,240 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756607851362.png
+2025-08-31 11:39:29,649 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:39:29,649 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:39:31,517 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_c9375e69-33b4-433e-963b-99f7640a1775
+2025-08-31 11:39:31,517 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:39:31,517 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_c9375e69-33b4-433e-963b-99f7640a1775
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,517 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:39:31,518 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:39:31,519 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:39:31,629 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,629 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,629 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,629 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756607968803.png
+2025-08-31 11:39:31,637 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGBA
+2025-08-31 11:39:31,637 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756607968803.png
+2025-08-31 11:39:31,637 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGBA
+2025-08-31 11:39:31,637 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756607968803.png
+2025-08-31 11:41:46,088 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:41:46,088 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:41:47,921 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_34d8ccad-d21b-46e1-b822-fe9c3357966d
+2025-08-31 11:41:47,922 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:41:47,922 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:47,921 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_34d8ccad-d21b-46e1-b822-fe9c3357966d
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:41:47,922 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:41:47,922 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:47,923 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:41:47,925 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:41:47,924 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:41:47,925 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:41:48,032 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:48,032 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:48,032 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:48,032 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608105334.png
+2025-08-31 11:41:48,043 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:41:48,043 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608105334.png
+2025-08-31 11:41:48,043 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:41:48,043 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608105334.png
+2025-08-31 11:41:50,436 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:41:50,436 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:41:51,116 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:41:51,116 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:42:46,632 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_feaac8f8-abfb-4507-8fcf-ca02361f26d9
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:42:46,632 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_feaac8f8-abfb-4507-8fcf-ca02361f26d9
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:42:46,633 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:42:46,634 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:42:46,724 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,724 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,724 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,724 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608166139.png
+2025-08-31 11:42:46,734 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGBA
+2025-08-31 11:42:46,734 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608166139.png
+2025-08-31 11:42:46,734 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGBA
+2025-08-31 11:42:46,734 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608166139.png
+2025-08-31 11:42:46,974 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:42:46,975 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:44:27,199 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:44:27,199 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:44:29,046 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ef44f319-2c64-49c5-a934-c5e0a9cbdc94
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:44:29,046 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ef44f319-2c64-49c5-a934-c5e0a9cbdc94
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:44:29,047 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:44:29,048 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 11:44:29,158 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,158 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,158 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,158 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608266386.png
+2025-08-31 11:44:29,168 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGBA
+2025-08-31 11:44:29,168 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608266386.png
+2025-08-31 11:44:29,168 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGBA
+2025-08-31 11:44:29,168 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608266386.png
+2025-08-31 11:47:49,494 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:47:49,495 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:47:51,177 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ae94dcb3-24db-42f2-a461-475064b919b7
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:47:51,177 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_ae94dcb3-24db-42f2-a461-475064b919b7
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:47:51,178 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:47:51,179 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:47:51,290 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,290 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,290 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,290 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:47:51,299 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:47:51,300 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:47:51,299 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:47:51,300 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:47:53,517 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:47:53,517 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:47:54,191 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:47:54,191 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:52:02,781 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:52:02,781 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:52:04,552 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_3d01405c-9eef-482d-8d81-2cc866344d98
+2025-08-31 11:52:04,553 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:52:04,552 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_3d01405c-9eef-482d-8d81-2cc866344d98
+2025-08-31 11:52:04,553 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608721954.png
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:52:04,553 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:52:04,553 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608721954.png
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608721954.png
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:52:04,556 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:52:04,556 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:52:04,554 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608721954.png
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:52:04,555 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:52:04,556 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:52:04,556 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:52:04,674 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:52:04,674 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:52:04,674 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:52:04,674 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:52:04,684 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:52:04,685 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:52:04,684 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:52:04,685 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:52:06,912 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:52:06,912 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:52:07,591 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:52:07,591 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:54:26,880 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:54:26,880 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_688fd21b-21ba-4ab9-b015-a226ba8e3c6e
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_688fd21b-21ba-4ab9-b015-a226ba8e3c6e
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608866045.png
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608866045.png
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:54:28,703 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608866045.png
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608866045.png
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:54:28,704 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:54:28,826 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:54:28,826 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:54:28,826 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:54:28,826 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:54:28,838 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:54:28,838 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:54:28,838 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:54:28,838 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:54:31,365 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:54:31,365 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:54:32,117 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:54:32,117 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:56:40,783 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:56:40,783 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:56:42,595 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_6090104e-54bd-4598-bcc7-1b2849099420
+2025-08-31 11:56:42,595 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:56:42,595 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_6090104e-54bd-4598-bcc7-1b2849099420
+2025-08-31 11:56:42,596 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608999985.png
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:56:42,595 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:56:42,596 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608999985.png
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608999985.png
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:56:42,597 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608999985.png
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:56:42,598 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:56:42,725 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:56:42,725 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:56:42,725 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:56:42,725 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:56:42,734 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:56:42,734 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:56:42,734 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:56:42,734 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:56:44,806 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:56:44,806 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:56:45,472 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:56:45,472 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:57:52,143 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 11:57:52,143 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 11:57:53,962 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_338e94bf-847c-4a0c-adaa-741165b261c8
+2025-08-31 11:57:53,962 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:57:53,962 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_338e94bf-847c-4a0c-adaa-741165b261c8
+2025-08-31 11:57:53,962 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756609071260.png
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756609071260.png
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756609071260.png
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756609071260.png
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:57:53,964 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:57:53,964 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:57:53,964 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:57:53,963 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 11:57:53,964 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 11:57:53,964 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 11:57:53,964 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 11:57:54,075 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:57:54,075 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:57:54,075 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:57:54,075 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 11:57:54,084 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:57:54,084 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:57:54,084 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 11:57:54,084 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 11:57:56,283 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:57:56,283 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 11:57:56,946 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 11:57:56,946 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:20:39,846 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:20:39,846 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_a9f11f83-f763-44b8-aea8-b506e19d91b1
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_a9f11f83-f763-44b8-aea8-b506e19d91b1
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610438866.png
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610438866.png
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:20:41,472 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610438866.png
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610438866.png
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:20:41,473 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:20:41,610 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:20:41,611 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:20:41,610 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:20:41,611 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:20:41,622 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:20:41,622 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:20:41,622 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:20:41,622 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:20:44,363 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:20:44,363 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:20:45,113 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:20:45,113 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:26:12,916 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:26:12,916 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:26:13,881 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_66db7128-c780-4c0b-aeef-d8958a24a3a1
+2025-08-31 12:26:13,882 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610772320.png
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:26:13,881 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_66db7128-c780-4c0b-aeef-d8958a24a3a1
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:26:13,882 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610772320.png
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610772320.png
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:26:13,883 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756610772320.png
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:26:13,884 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:26:13,974 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:26:13,974 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:26:13,974 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:26:13,974 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:26:13,981 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:26:13,981 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:26:13,981 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:26:13,981 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:26:16,275 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:26:16,275 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:26:17,012 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:26:17,012 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:39:29,615 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:39:29,615 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:39:29,674 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_63de28e3-ab73-43aa-a279-3b7dab147905
+2025-08-31 12:39:29,676 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:39:29,677 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611568952.png
+2025-08-31 12:39:29,677 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Config file - User ID: 12
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Config file - Username: bassrkd
+2025-08-31 12:39:29,674 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_63de28e3-ab73-43aa-a279-3b7dab147905
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:39:29,676 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:39:29,677 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611568952.png
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:39:29,677 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Config file - User ID: 12
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611568952.png
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Config file - Username: bassrkd
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611568952.png
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   User ID: 12
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Username: bassrkd
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:39:29,678 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   User ID: 12
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Username: bassrkd
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:39:29,679 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:39:29,772 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:39:29,772 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:39:29,772 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:39:29,772 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:39:29,781 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:39:29,782 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:39:29,781 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:39:29,782 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:39:33,058 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:39:33,058 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:39:33,694 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:39:33,694 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:40:51,730 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:40:51,730 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:40:53,191 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_124c0a5e-3303-4314-888e-2c3ceb6669c5
+2025-08-31 12:40:53,193 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:40:53,191 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_124c0a5e-3303-4314-888e-2c3ceb6669c5
+2025-08-31 12:40:53,193 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611650927.png
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:40:53,193 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - User ID: 12
+2025-08-31 12:40:53,193 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611650927.png
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - Username: bassrkd
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - User ID: 12
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611650927.png
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - Username: bassrkd
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO -   User ID: 12
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:40:53,195 - hedra-avatar-example - INFO -   Username: bassrkd
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611650927.png
+2025-08-31 12:40:53,195 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:40:53,195 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:40:53,194 - hedra-avatar-example - INFO -   User ID: 12
+2025-08-31 12:40:53,195 - hedra-avatar-example - INFO -   Username: bassrkd
+2025-08-31 12:40:53,195 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:40:53,195 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:40:53,329 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:40:53,329 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:40:53,329 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:40:53,329 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:40:53,336 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:40:53,337 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:40:53,336 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:40:53,337 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:40:55,651 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:40:55,651 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:40:56,343 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:40:56,343 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:43:11,614 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:43:11,614 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:43:13,242 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_1d7dac61-f906-459c-b4d6-4a8df51f4153
+2025-08-31 12:43:13,243 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611790804.png
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - User ID: 12
+2025-08-31 12:43:13,242 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_1d7dac61-f906-459c-b4d6-4a8df51f4153
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Username: bassrkd
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:43:13,243 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611790804.png
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611790804.png
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   User ID: 12
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Username: bassrkd
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - User ID: 12
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Username: bassrkd
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:43:13,244 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611790804.png
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   User ID: 12
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Username: bassrkd
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:43:13,245 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:43:13,368 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:43:13,369 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:43:13,368 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:43:13,369 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:43:13,377 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:43:13,378 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:43:13,377 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:43:13,378 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:43:15,918 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:43:15,918 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:43:16,653 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:43:16,653 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:44:23,633 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_bce688b7-dc59-4768-84d5-4a66dc718289
+2025-08-31 12:44:23,633 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:44:23,633 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_bce688b7-dc59-4768-84d5-4a66dc718289
+2025-08-31 12:44:23,633 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611863185.png
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611863185.png
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611863185.png
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611863185.png
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:44:23,634 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:44:23,706 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:44:23,706 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:44:23,706 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:44:23,706 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:44:23,714 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:44:23,715 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:44:23,714 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:44:23,715 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:44:23,724 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:44:23,724 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:44:25,904 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:44:25,904 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:44:26,599 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:44:26,599 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:46:12,082 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_a5ef2c47-0849-4686-bcef-76e1873a166c
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:46:12,082 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_a5ef2c47-0849-4686-bcef-76e1873a166c
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611971623.png
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611971623.png
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611971623.png
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:46:12,083 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756611971623.png
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:46:12,084 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:46:12,161 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:46:12,161 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:46:12,161 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:46:12,161 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:46:12,172 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:46:12,172 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:46:12,172 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:46:12,172 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:46:12,249 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:46:12,249 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:46:14,451 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:46:14,451 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:46:15,130 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:46:15,130 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:55:54,615 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 12:55:54,615 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 12:55:54,901 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_01da0430-1634-44fe-aa44-b118d771458d
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:55:54,901 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_01da0430-1634-44fe-aa44-b118d771458d
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756612553918.png
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756612553918.png
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756612553918.png
+2025-08-31 12:55:54,902 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756612553918.png
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 12:55:54,903 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 12:55:54,977 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:55:54,977 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:55:54,977 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:55:54,977 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 12:55:54,985 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:55:54,985 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:55:54,985 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 12:55:54,985 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 12:55:57,394 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:55:57,394 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 12:55:58,228 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 12:55:58,228 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 13:13:11,118 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 13:13:11,118 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 13:13:11,367 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_5c19a228-cff1-4876-9a96-a1539bf70421
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 13:13:11,367 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_5c19a228-cff1-4876-9a96-a1539bf70421
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756613590511.png
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756613590511.png
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - User ID: 11
+2025-08-31 13:13:11,368 - hedra-avatar-example - INFO - Config file - Username: test6
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Config file - Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756613590511.png
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756613590511.png
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Prompt: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   User ID: 11
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Username: test6
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO -   Voice ID: WlTYZQsFnSwb5skDNdyT
+2025-08-31 13:13:11,369 - hedra-avatar-example - INFO - Using agent instructions: 당신은 세월호 참사로 희생된 단원고에 다니던 아들입니다.
+2025-08-31 13:13:11,453 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 13:13:11,453 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 13:13:11,453 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 13:13:11,453 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756608468699.png
+2025-08-31 13:13:11,461 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 13:13:11,461 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 13:13:11,461 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 13:13:11,461 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756608468699.png
+2025-08-31 13:13:13,945 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 13:13:13,945 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 13:13:14,893 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 13:13:14,893 - hedra-avatar-example - INFO - Agent session started successfully

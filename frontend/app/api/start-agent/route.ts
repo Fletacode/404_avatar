@@ -141,29 +141,29 @@ export async function POST(request: Request) {
     // 음성 파일 처리 및 ElevenLabs 보이스 생성
     let voiceId = "WlTYZQsFnSwb5skDNdyT"; // 기본 voice_id
     
-    if (voiceFile && voiceFile.startsWith('data:audio/')) {
-      try {
-        console.log("음성 파일을 처리하고 ElevenLabs로 보이스를 생성합니다...");
+    // if (voiceFile && voiceFile.startsWith('data:audio/')) {
+    //   try {
+    //     console.log("음성 파일을 처리하고 ElevenLabs로 보이스를 생성합니다...");
         
-        // base64 데이터를 파일로 저장
-        const audioBuffer = Buffer.from(voiceFile.split(',')[1], 'base64');
-        const audioFileName = `voice_${Date.now()}.mp3`;
-        const audioFilePath = path.join(backendDir, "assets", audioFileName);
+    //     // base64 데이터를 파일로 저장
+    //     const audioBuffer = Buffer.from(voiceFile.split(',')[1], 'base64');
+    //     const audioFileName = `voice_${Date.now()}.mp3`;
+    //     const audioFilePath = path.join(backendDir, "assets", audioFileName);
         
-        fs.writeFileSync(audioFilePath, audioBuffer);
-        console.log(`음성 파일 저장됨: ${audioFilePath}`);
+    //     fs.writeFileSync(audioFilePath, audioBuffer);
+    //     console.log(`음성 파일 저장됨: ${audioFilePath}`);
         
-        // ElevenLabs API로 보이스 생성
-        const voiceIdResponse = await createVoiceClone(audioFilePath);
-        if (voiceIdResponse) {
-          voiceId = voiceIdResponse;
-          console.log(`새로운 보이스 생성됨: ${voiceId}`);
-        }
-      } catch (error) {
-        console.error('보이스 생성 실패:', error);
-        console.log('기본 보이스를 사용합니다.');
-      }
-    }
+    //     // ElevenLabs API로 보이스 생성
+    //     const voiceIdResponse = await createVoiceClone(audioFilePath);
+    //     if (voiceIdResponse) {
+    //       voiceId = voiceIdResponse;
+    //       console.log(`새로운 보이스 생성됨: ${voiceId}`);
+    //     }
+    //   } catch (error) {
+    //     console.error('보이스 생성 실패:', error);
+    //     console.log('기본 보이스를 사용합니다.');
+    //   }
+    // }
     
     // 설정을 텍스트 파일로 저장
     const configContent = `IMAGE_PATH=${finalImagePath}
