@@ -9,8 +9,10 @@ export function Navigation() {
   const { user, logout } = useAuth();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMatchingDropdownOpen, setIsMatchingDropdownOpen] = useState(false);
 
   const isActive = (path: string) => pathname === path;
+  const isMatchingActive = () => pathname.startsWith('/matching');
 
   const handleLogout = () => {
     logout();
@@ -20,6 +22,11 @@ export function Navigation() {
   const navigation = [
     { name: '홈', href: '/' },
     { name: '게시판', href: '/board' },
+  ];
+
+  const matchingNavigation = [
+    { name: '상담사 매칭', href: '/matching/counselor' },
+    { name: '유가족 매칭', href: '/matching/family' },
   ];
 
   const adminNavigation = [
@@ -52,6 +59,50 @@ export function Navigation() {
                 {item.name}
               </Link>
             ))}
+            
+            {/* 매칭 드롭다운 */}
+            <div className="relative">
+              <button
+                onClick={() => setIsMatchingDropdownOpen(!isMatchingDropdownOpen)}
+                onBlur={() => setTimeout(() => setIsMatchingDropdownOpen(false), 150)}
+                className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  isMatchingActive()
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                매칭
+                <svg
+                  className={`ml-1 h-4 w-4 transform transition-transform ${
+                    isMatchingDropdownOpen ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {isMatchingDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                  {matchingNavigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setIsMatchingDropdownOpen(false)}
+                      className={`block px-4 py-2 text-sm transition-colors ${
+                        isActive(item.href)
+                          ? 'text-blue-600 bg-blue-50'
+                          : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             
             {user?.isAdmin && adminNavigation.map((item) => (
               <Link
@@ -145,6 +196,27 @@ export function Navigation() {
                 {item.name}
               </Link>
             ))}
+            
+            {/* 모바일 매칭 메뉴 */}
+            <div className="space-y-1">
+              <div className="px-3 py-2 text-base font-medium text-gray-900 border-b border-gray-200">
+                매칭
+              </div>
+              {matchingNavigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block px-6 py-2 rounded-md text-base font-medium transition-colors ${
+                    isActive(item.href)
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
             
             {user?.isAdmin && adminNavigation.map((item) => (
               <Link

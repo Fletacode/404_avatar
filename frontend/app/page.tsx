@@ -239,16 +239,16 @@ export default function Page() {
 
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-center">
-              <div className="text-3xl mb-4">📝</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">설문조사</h3>
+              <div className="text-3xl mb-4">🤝</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">매칭</h3>
               <p className="text-gray-600 mb-4">
-                유가족 지원 서비스를 위한 설문조사에 참여하세요.
+                전문 상담사와 매칭되어 개인 맞춤 상담을 받아보세요.
               </p>
               <a
-                href="/survey/my"
+                href="/matching"
                 className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors"
               >
-                설문조사 참여
+                매칭 서비스
               </a>
             </div>
           </div>

@@ -97,93 +97,143 @@ export function BoardDetail({ boardId }: BoardDetailProps) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      {/* 헤더 */}
-      <div className="mb-6">
-        <Link
-          href="/board"
-          className="text-blue-600 hover:text-blue-800 text-sm"
-        >
-          ← 목록으로 돌아가기
-        </Link>
-      </div>
-
-      {/* 게시글 정보 */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <h1 className="text-2xl font-bold text-gray-900">{board.title}</h1>
-              {board.isAdminPost && (
-                <span className="px-2 py-1 text-xs bg-red-100 text-red-800 rounded">
-                  공지
-                </span>
-              )}
-            </div>
-            {canEditOrDelete && (
-              <div className="flex space-x-2">
-                <Link
-                  href={`/board/edit/${board.id}`}
-                  className="px-3 py-1 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                >
-                  수정
-                </Link>
-                <button
-                  onClick={handleDelete}
-                  disabled={deleteLoading}
-                  className="px-3 py-1 text-sm bg-red-600 text-white rounded hover:bg-red-700 transition-colors disabled:opacity-50"
-                >
-                  {deleteLoading ? '삭제 중...' : '삭제'}
-                </button>
-              </div>
-            )}
-          </div>
-          
-          <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
-            <div className="flex items-center space-x-4">
-              <span>작성자: {board.author}</span>
-              <span>카테고리: {board.category.name}</span>
-              <span>조회수: {board.viewCount}</span>
-            </div>
-            <div className="flex items-center space-x-4">
-              <span>작성일: {formatDate(board.createdAt)}</span>
-              {board.createdAt !== board.updatedAt && (
-                <span>수정일: {formatDate(board.updatedAt)}</span>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* 게시글 내용 */}
-        <div className="px-6 py-8">
-          <div 
-            className="prose max-w-none text-gray-900 whitespace-pre-wrap"
-            dangerouslySetInnerHTML={{ __html: board.content.replace(/\n/g, '<br>') }}
-          />
-        </div>
-      </div>
-
-      {/* 댓글 섹션 */}
-      <div className="bg-white rounded-lg shadow-lg">
-        <CommentSection boardId={boardId} />
-      </div>
-
-      {/* 하단 네비게이션 */}
-      <div className="mt-6 flex justify-between">
-        <Link
-          href="/board"
-          className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors"
-        >
-          목록
-        </Link>
-        {user && (
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* 헤더 */}
+        <div className="mb-8">
           <Link
-            href="/board/write"
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+            href="/board"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
           >
-            새 글 작성
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            목록으로 돌아가기
           </Link>
-        )}
+        </div>
+
+        {/* 게시글 정보 */}
+        <article className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+          {/* 헤더 */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-6 text-white">
+            <div className="flex items-start justify-between">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <h1 className="text-3xl font-bold leading-tight">{board.title}</h1>
+                  {board.isAdminPost && (
+                    <span className="px-3 py-1 text-xs bg-red-500 text-white rounded-full font-medium">
+                      공지
+                    </span>
+                  )}
+                </div>
+                
+                <div className="flex flex-wrap items-center gap-4 text-blue-100">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <span className="font-medium">{board.author}</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <span>{board.category.name}</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span>{board.viewCount}회</span>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>{formatDate(board.createdAt)}</span>
+                  </div>
+                  
+                  {board.createdAt !== board.updatedAt && (
+                    <div className="flex items-center gap-2">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                      </svg>
+                      <span>수정됨: {formatDate(board.updatedAt)}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+              
+              {canEditOrDelete && (
+                <div className="flex space-x-3">
+                  <Link
+                    href={`/board/edit/${board.id}`}
+                    className="px-4 py-2 bg-white bg-opacity-20 text-white rounded-lg hover:bg-opacity-30 transition-all duration-200 font-medium"
+                  >
+                    수정
+                  </Link>
+                  <button
+                    onClick={handleDelete}
+                    disabled={deleteLoading}
+                    className="px-4 py-2 bg-red-500 bg-opacity-80 text-white rounded-lg hover:bg-opacity-100 transition-all duration-200 disabled:opacity-50 font-medium"
+                  >
+                    {deleteLoading ? '삭제 중...' : '삭제'}
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* 게시글 내용 */}
+          <div className="px-8 py-8">
+            <div 
+              className="prose prose-lg max-w-none text-gray-800 leading-relaxed"
+              style={{ 
+                lineHeight: '1.8',
+                fontSize: '16px'
+              }}
+              dangerouslySetInnerHTML={{ 
+                __html: board.content
+                  .replace(/\n/g, '<br>')
+                  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                  .replace(/\*(.*?)\*/g, '<em>$1</em>')
+              }}
+            />
+          </div>
+        </article>
+
+        {/* 댓글 섹션 */}
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <CommentSection boardId={boardId} />
+        </div>
+
+        {/* 하단 네비게이션 */}
+        <div className="mt-8 flex justify-between items-center">
+          <Link
+            href="/board"
+            className="inline-flex items-center px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            목록
+          </Link>
+          {user && (
+            <Link
+              href="/board/write"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+              새 글 작성
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

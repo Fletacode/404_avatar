@@ -229,3 +229,60 @@ export const surveyApi = {
     // 임시로 인증 없이 요청 (JWT 문제 해결 후 authenticatedApiCall로 복원)
     apiCall<any>('/surveys/statistics'),
 };
+
+// 매칭 API
+export const matchingApi = {
+  // 모든 상담사 조회
+  getAllCounselors: () =>
+    apiCall<any[]>('/matching/counselors'),
+
+  // 추천 상담사 조회 (사용자 설문조사 기반)
+  getRecommendedCounselors: () =>
+    apiCall<any[]>('/matching/counselors/recommended'),
+
+  // 특정 상담사 상세 조회
+  getCounselorById: (id: number) =>
+    apiCall<any>(`/matching/counselors/${id}`),
+
+  // 매칭 요청 생성
+  createMatching: (data: { counselorId: number; notes?: string }) =>
+    apiCall<any>('/matching', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+
+  // 내 매칭 목록 조회
+  getMyMatchings: () =>
+    apiCall<any[]>('/matching/my-matchings'),
+
+  // 매칭 상태 업데이트
+  updateMatching: (id: number, data: { status: string; notes?: string; rejectionReason?: string }) =>
+    apiCall<any>(`/matching/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+    }),
+
+  // 유가족 그룹 관련 API
+  // 전체 유가족 그룹 조회
+  getAllFamilyGroups: () =>
+    apiCall<any[]>('/matching/family-groups'),
+
+  // 추천 유가족 그룹 조회
+  getRecommendedFamilyGroups: () =>
+    apiCall<any[]>('/matching/family-groups/recommended'),
+
+  // 특정 유가족 그룹 상세 조회
+  getFamilyGroupById: (id: number) =>
+    apiCall<any>(`/matching/family-groups/${id}`),
+
+  // 유가족 그룹 참가 신청
+  createFamilyMatching: (data: { familyGroupId: number; notes?: string }) =>
+    apiCall<any>('/matching/family-groups', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+
+  // 내 유가족 매칭 목록 조회
+  getMyFamilyMatchings: () =>
+    apiCall<any[]>('/matching/my-family-matchings'),
+};
