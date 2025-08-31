@@ -6,7 +6,7 @@ import { CloseIcon } from "./CloseIcon";
 interface AgentConfigModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onStart: (config: { imagePath: string; prompt: string }) => void;
+  onStart: (config: { imagePath: string; prompt: string; voiceFile?: File }) => void;
   isLoading?: boolean;
 }
 
@@ -16,6 +16,10 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
   const [selectedImageType, setSelectedImageType] = useState<"preset" | "upload">("preset");
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  
+  // 음성 파일 관련 상태
+  const [selectedVoiceFile, setSelectedVoiceFile] = useState<File | null>(null);
+  const [voiceFileRef] = useState(useRef<HTMLInputElement>(null));
 
   // 사전 정의된 아바타 이미지 목록
   const presetImages = [
@@ -56,7 +60,7 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
       alert("이미지와 프롬프트를 모두 입력해주세요.");
       return;
     }
-    onStart({ imagePath, prompt });
+    onStart({ imagePath, prompt, voiceFile: selectedVoiceFile || undefined });
   };
 
   const handleReset = () => {
@@ -64,8 +68,12 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
     setImagePath("fred.png");
     setSelectedImageType("preset");
     setSelectedFile(null);
+    setSelectedVoiceFile(null);
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
+    }
+    if (voiceFileRef.current) {
+      voiceFileRef.current.value = "";
     }
   };
 
@@ -86,36 +94,36 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* 이미지 선택 섹션 */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-3">
-              아바타 이미지
-            </label>
-            
-            {/* 프리셋 이미지 선택 */}
-            <div className="mb-4">
-              <h4 className="text-sm font-medium text-gray-600 mb-2">프리셋 이미지</h4>
-              <div className="flex gap-2">
-                {presetImages.map((image) => (
-                  <button
-                    key={image.name}
-                    type="button"
-                    onClick={() => handlePresetImageSelect(image.name)}
-                    className={`p-2 border-2 rounded-lg transition-colors ${
-                      selectedImageType === "preset" && imagePath === image.name
-                        ? 'border-blue-500 bg-blue-50'
-                        : 'border-gray-300 hover:border-gray-400'
-                    }`}
-                    disabled={isLoading}
-                  >
-                    <div className="text-center">
-                      <div className="text-lg mb-1">{image.displayName}</div>
-                      <div className="text-xs text-gray-500">{image.name}</div>
-                    </div>
-                  </button>
-                ))}
+                      {/* 이미지 선택 섹션 */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-3">
+                아바타 이미지
+              </label>
+              
+              {/* 프리셋 이미지 선택 */}
+              <div className="mb-4">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">프리셋 이미지</h4>
+                <div className="flex gap-2">
+                  {presetImages.map((image) => (
+                    <button
+                      key={image.name}
+                      type="button"
+                      onClick={() => handlePresetImageSelect(image.name)}
+                      className={`p-2 border-2 rounded-lg transition-colors ${
+                        selectedImageType === "preset" && imagePath === image.name
+                          ? 'border-blue-500 bg-blue-50'
+                          : 'border-gray-300 hover:border-gray-400'
+                      }`}
+                      disabled={isLoading}
+                    >
+                      <div className="text-center">
+                        <div className="text-lg mb-1">{image.displayName}</div>
+                        <div className="text-xs text-gray-500">{image.name}</div>
+                      </div>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
 
             {/* 커스텀 이미지 업로드 */}
             <div>
@@ -162,6 +170,60 @@ export function AgentConfigModal({ isOpen, onClose, onStart, isLoading }: AgentC
                   </div>
                 )}
               </div>
+            </div>
+          </div>
+
+          {/* 음성 파일 업로드 섹션 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              음성 파일 (MP3)
+            </label>
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
+              <input
+                ref={voiceFileRef}
+                type="file"
+                accept="audio/mp3,audio/mpeg"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) {
+                    setSelectedVoiceFile(file);
+                  }
+                }}
+                className="hidden"
+                disabled={isLoading}
+              />
+              {selectedVoiceFile ? (
+                <div className="space-y-2">
+                  <div className="text-green-600 font-medium">
+                    ✓ {selectedVoiceFile.name}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => voiceFileRef.current?.click()}
+                    className="text-blue-600 hover:text-blue-800 underline"
+                    disabled={isLoading}
+                  >
+                    다른 음성 파일 선택
+                  </button>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  <div className="text-gray-400">
+                    <svg className="mx-auto h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => voiceFileRef.current?.click()}
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    disabled={isLoading}
+                  >
+                    MP3 음성 파일 선택
+                  </button>
+                  <p className="text-sm text-gray-500">MP3 파일을 업로드하면 ElevenLabs로 보이스를 생성합니다</p>
+                </div>
+              )}
             </div>
           </div>
 

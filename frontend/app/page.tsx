@@ -30,6 +30,16 @@ export default function Page() {
   const [isStartingAgent, setIsStartingAgent] = useState(false);
   const [isLogsModalOpen, setIsLogsModalOpen] = useState(false);
 
+  // 파일을 base64로 변환하는 함수
+  const fileToBase64 = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = error => reject(error);
+    });
+  };
+
   const handleCleanupAgent = async () => {
     try {
       const response = await fetch("/api/cleanup-agent", {
@@ -48,7 +58,7 @@ export default function Page() {
     }
   };
 
-  const startAgentWithConfig = useCallback(async (config: { imagePath: string; prompt: string }) => {
+  const startAgentWithConfig = useCallback(async (config: { imagePath: string; prompt: string; voiceFile?: File }) => {
     if (!user) return;
 
     setIsStartingAgent(true);
@@ -64,6 +74,7 @@ export default function Page() {
           prompt: config.prompt,
           userId: user.id,
           username: user.username,
+          voiceFile: config.voiceFile ? await fileToBase64(config.voiceFile) : undefined,
         }),
       });
 

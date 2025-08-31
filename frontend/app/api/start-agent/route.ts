@@ -3,11 +3,45 @@ import { exec, spawn } from "child_process";
 import { promisify } from "util";
 import path from "path";
 import fs from "fs";
+import { ElevenLabsClient } from "@elevenlabs/elevenlabs-js";
 
 const execAsync = promisify(exec);
 
 // PID 파일 경로
 const PID_FILE = path.join(process.cwd(), "..", "backend", "agent_worker.pid");
+
+// ElevenLabs 보이스 클로닝 함수
+async function createVoiceClone(audioFilePath: string): Promise<string | null> {
+  try {
+    const elevenLabsApiKey = process.env.ELEVENLABS_API_KEY;
+    if (!elevenLabsApiKey) {
+      console.log("ELEVENLABS_API_KEY가 설정되지 않았습니다.");
+      return null;
+    }
+
+    // ElevenLabs 클라이언트 초기화
+    const elevenlabs = new ElevenLabsClient({
+      apiKey: elevenLabsApiKey
+    });
+
+    // 음성 파일을 스트림으로 읽기
+    const audioStream = fs.createReadStream(audioFilePath);
+
+    // Instant Voice Clone 생성
+    const voice = await elevenlabs.voices.ivc.create({
+      name: `Voice_${Date.now()}`,
+      description: '사용자 업로드 음성으로 생성된 보이스',
+      files: [audioStream],
+    });
+
+    console.log('보이스 생성 성공:', voice);
+    return voice.voiceId;
+    
+  } catch (error) {
+    console.error('보이스 생성 중 오류:', error);
+    return null;
+  }
+}
 
 // 프로세스 정리 함수
 function cleanupProcess(pid: number) {
@@ -47,7 +81,7 @@ function cleanupExistingProcesses() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { imagePath, prompt, userId, username } = body;
+    const { imagePath, prompt, userId, username, voiceFile } = body;
 
     if (!imagePath || !prompt || !userId || !username) {
       return new NextResponse("Missing required parameters", { status: 400 });
@@ -104,11 +138,39 @@ export async function POST(request: Request) {
       finalImagePath = imagePath;
     }
     
+    // 음성 파일 처리 및 ElevenLabs 보이스 생성
+    let voiceId = "WlTYZQsFnSwb5skDNdyT"; // 기본 voice_id
+    
+    if (voiceFile && voiceFile.startsWith('data:audio/')) {
+      try {
+        console.log("음성 파일을 처리하고 ElevenLabs로 보이스를 생성합니다...");
+        
+        // base64 데이터를 파일로 저장
+        const audioBuffer = Buffer.from(voiceFile.split(',')[1], 'base64');
+        const audioFileName = `voice_${Date.now()}.mp3`;
+        const audioFilePath = path.join(backendDir, "assets", audioFileName);
+        
+        fs.writeFileSync(audioFilePath, audioBuffer);
+        console.log(`음성 파일 저장됨: ${audioFilePath}`);
+        
+        // ElevenLabs API로 보이스 생성
+        const voiceIdResponse = await createVoiceClone(audioFilePath);
+        if (voiceIdResponse) {
+          voiceId = voiceIdResponse;
+          console.log(`새로운 보이스 생성됨: ${voiceId}`);
+        }
+      } catch (error) {
+        console.error('보이스 생성 실패:', error);
+        console.log('기본 보이스를 사용합니다.');
+      }
+    }
+    
     // 설정을 텍스트 파일로 저장
     const configContent = `IMAGE_PATH=${finalImagePath}
 PROMPT=${prompt}
 USER_ID=${userId}
-USERNAME=${username}`;
+USERNAME=${username}
+VOICE_ID=${voiceId}`;
     
     const configFilePath = path.join(backendDir, "assets", "agent_config.txt");
     fs.writeFileSync(configFilePath, configContent, 'utf8');

@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from PIL import Image
 
 from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, WorkerType, cli
-from livekit.plugins import hedra, openai
+from livekit.plugins import hedra, openai, elevenlabs, silero
 
 logger = logging.getLogger("hedra-avatar-example")
 logger.setLevel(logging.INFO)
@@ -29,7 +29,7 @@ load_dotenv(".env.local")
 async def entrypoint(ctx: JobContext):
     logger.info(f"Agent starting for room: {ctx.room.name}")
     
-    CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME = load_config_from_file()
+    CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME, VOICE_ID = load_config_from_file()
 
     # Configuration already loaded at startup, just use it
     logger.info(f"Using loaded configuration:")
@@ -37,14 +37,30 @@ async def entrypoint(ctx: JobContext):
     logger.info(f"  Prompt: {CUSTOM_PROMPT}")
     logger.info(f"  User ID: {USER_ID}")
     logger.info(f"  Username: {USERNAME}")
+    logger.info(f"  Voice ID: {VOICE_ID}")
     
     # Use custom prompt if provided, otherwise use default
     agent_instructions = CUSTOM_PROMPT if CUSTOM_PROMPT else "Talk to me!"
     logger.info(f"Using agent instructions: {agent_instructions}")
     
     session = AgentSession(
-        # List of voices here: https://www.openai.fm/
-        llm=openai.realtime.RealtimeModel(voice="ash"),
+        # VAD: Voice Activity Detection으로 스트리밍 활성화
+        vad=silero.VAD.load(),
+        # STT: OpenAI Whisper (VAD와 함께 사용하여 스트리밍 지원)
+        stt=openai.STT(
+            model="whisper-1",
+            api_key=os.getenv("OPENAI_API_KEY")
+        ),
+        # LLM: AI 응답 생성
+        llm=openai.LLM(
+            model="gpt-4o-mini",
+            api_key=os.getenv("OPENAI_API_KEY")
+        ),
+        # TTS: ElevenLabs로 사용자 정의 음성 (동적으로 voice_id 할당)
+        tts=elevenlabs.TTS(
+            voice_id=VOICE_ID, 
+            api_key=os.getenv("ELEVENLABS_API_KEY")
+        ),
     )
 
     # Get user avatar (custom or default)
@@ -105,7 +121,12 @@ async def get_user_avatar(room, CUSTOM_IMAGE_PATH) -> Image.Image:
 
 def load_config_from_file():
     """Load configuration from config file"""
-    
+    # 전역 변수 초기화
+    CUSTOM_IMAGE_PATH = None
+    CUSTOM_PROMPT = None
+    USER_ID = None
+    USERNAME = None
+    VOICE_ID = "WlTYZQsFnSwb5skDNdyT"  # 기본 voice_id
     
     config_file_path = os.path.join(os.path.dirname(__file__), "assets", "agent_config.txt")
     
@@ -135,6 +156,9 @@ def load_config_from_file():
                     elif key == 'USERNAME':
                         USERNAME = value
                         logger.info(f"Config file - Username: {USERNAME}")
+                    elif key == 'VOICE_ID':
+                        VOICE_ID = value
+                        logger.info(f"Config file - Voice ID: {VOICE_ID}")
             
             logger.info(f"Configuration loaded from file successfully")
             
@@ -150,11 +174,12 @@ def load_config_from_file():
         else:
             logger.info("Config file not found, using default configuration")
         
-        return CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME
+        return CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME, VOICE_ID
             
     except Exception as e:
         logger.error(f"Error loading config file: {e}")
         logger.info("Falling back to default configuration")
+        return CUSTOM_IMAGE_PATH, CUSTOM_PROMPT, USER_ID, USERNAME, VOICE_ID
 
 if __name__ == "__main__":
     logger.info("Starting LiveKit Agent Worker...")

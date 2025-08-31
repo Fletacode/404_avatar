@@ -13,6 +13,7 @@
     "cleanup": "node cleanup.js"
   },
   "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.13.0",
     "@livekit/components-react": "^2.9.3",
     "@livekit/components-styles": "^1.1.4",
     "framer-motion": "^11.18.0",

@@ -1084,3 +1084,255 @@
 2025-08-31 08:01:22,653 - hedra-avatar-example - INFO - Hedra avatar session started successfully
 2025-08-31 08:01:23,503 - hedra-avatar-example - INFO - Agent session started successfully
 2025-08-31 08:01:23,503 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 09:14:43,676 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 09:14:43,676 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 09:14:44,644 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_615879fe-e5ca-4d78-9657-92f6e8fa0ca3
+2025-08-31 09:14:44,644 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:14:44,644 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_615879fe-e5ca-4d78-9657-92f6e8fa0ca3
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599282889.png
+2025-08-31 09:14:44,644 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599282889.png
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599282889.png
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599282889.png
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:14:44,645 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599282889.png
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599282889.png
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:14:44,646 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:32,485 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 09:17:32,485 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 09:17:33,704 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_97ead896-59b0-4c77-b672-880c6c2fcaff
+2025-08-31 09:17:33,704 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:17:33,704 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_97ead896-59b0-4c77-b672-880c6c2fcaff
+2025-08-31 09:17:33,704 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:17:33,705 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,705 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:17:33,705 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,705 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,706 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:17:33,831 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 09:17:33,831 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756599435167.png
+2025-08-31 09:17:33,831 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 09:17:33,831 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756599435167.png
+2025-08-31 09:17:36,231 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 09:17:36,231 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 09:17:36,708 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 09:17:36,708 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 09:20:09,401 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 09:20:09,401 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_9c434677-56b8-4753-99ee-94f2cb433ecd
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_9c434677-56b8-4753-99ee-94f2cb433ecd
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:20:12,887 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,888 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756599435167.png
+2025-08-31 09:20:12,901 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 09:20:12,901 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756599435167.png
+2025-08-31 09:20:12,901 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 09:20:12,901 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756599435167.png
+2025-08-31 09:20:15,441 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 09:20:15,441 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 09:20:15,910 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 09:20:15,910 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 09:47:16,038 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 09:47:16,038 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 09:47:23,382 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_eb6f2645-8f7f-44cc-b696-17a34e53e9f9
+2025-08-31 09:47:23,382 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:47:23,382 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_eb6f2645-8f7f-44cc-b696-17a34e53e9f9
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,382 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:47:23,384 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:47:23,384 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:47:23,383 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 09:47:23,384 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 09:47:23,384 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 09:47:23,474 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,474 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,474 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,474 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756601234676.png
+2025-08-31 09:47:23,580 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 09:47:23,580 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756601234676.png
+2025-08-31 09:47:23,580 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 09:47:23,580 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756601234676.png
+2025-08-31 09:47:25,956 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 09:47:25,956 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 09:47:26,603 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 09:47:26,603 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 10:17:31,450 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 10:17:31,450 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 10:25:17,628 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 10:25:17,628 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 10:27:34,460 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 10:27:34,460 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_60cb50b0-a97b-47d3-881e-873cb196b6b6
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_60cb50b0-a97b-47d3-881e-873cb196b6b6
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Voice ID: 2FDhXg0LjoWUnhV6dF9k
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Voice ID: 2FDhXg0LjoWUnhV6dF9k
+2025-08-31 10:27:59,660 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Config file - Voice ID: 2FDhXg0LjoWUnhV6dF9k
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 10:27:59,659 - hedra-avatar-example - INFO -   Voice ID: 2FDhXg0LjoWUnhV6dF9k
+2025-08-31 10:27:59,660 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:27:59,752 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,752 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,752 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,752 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756603651970.png
+2025-08-31 10:27:59,770 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 10:27:59,770 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756603651970.png
+2025-08-31 10:27:59,770 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 10:27:59,770 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756603651970.png
+2025-08-31 10:28:02,017 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 10:28:02,017 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 10:28:02,675 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 10:28:02,675 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 10:33:23,712 - hedra-avatar-example - INFO - Starting LiveKit Agent Worker...
+2025-08-31 10:33:23,713 - hedra-avatar-example - INFO - Configuration loaded, starting agent...
+2025-08-31 10:34:13,665 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_f4452feb-0894-407b-b186-378505792fd2
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 10:34:13,665 - hedra-avatar-example - INFO - Agent starting for room: voice_assistant_room_f4452feb-0894-407b-b186-378505792fd2
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Loading configuration from file: /Users/dhkim/Desktop/avatar/backend/assets/agent_config.txt
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Config file - Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Config file - Voice ID: QILHblyd0i2byCuNjAnB
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Config file - Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 10:34:13,666 - hedra-avatar-example - INFO - Config file - User ID: 5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Config file - Username: test5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Voice ID: QILHblyd0i2byCuNjAnB
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Config file - Voice ID: QILHblyd0i2byCuNjAnB
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Configuration loaded from file successfully
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - ✓ Custom image file exists: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Using loaded configuration:
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Image path: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Prompt: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   User ID: 5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Username: test5
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO -   Voice ID: QILHblyd0i2byCuNjAnB
+2025-08-31 10:34:13,667 - hedra-avatar-example - INFO - Using agent instructions: 당신은 친근하고 도움이 되는 AI 어시스턴트입니다. 사용자와 자연스럽고 즐거운 대화를 나누세요.
+2025-08-31 10:34:13,756 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,757 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,756 - hedra-avatar-example - INFO - get_user_avatar called - CUSTOM_IMAGE_PATH: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,757 - hedra-avatar-example - INFO - ✓ Using custom avatar image: /Users/dhkim/Desktop/avatar/backend/assets/user_avatar_1756604000220.png
+2025-08-31 10:34:13,766 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 10:34:13,766 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756604000220.png
+2025-08-31 10:34:13,766 - hedra-avatar-example - INFO - ✓ Successfully loaded custom image: (1024, 1024) pixels, mode: RGB
+2025-08-31 10:34:13,766 - hedra-avatar-example - INFO - Selected avatar image: user_avatar_1756604000220.png
+2025-08-31 10:34:16,206 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 10:34:16,206 - hedra-avatar-example - INFO - Hedra avatar session started successfully
+2025-08-31 10:34:17,054 - hedra-avatar-example - INFO - Agent session started successfully
+2025-08-31 10:34:17,054 - hedra-avatar-example - INFO - Agent session started successfully
