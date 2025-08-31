@@ -38,9 +38,9 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <img src="/assets/hedra_logo.svg" alt="Hedra" className="h-8 w-auto" />
-              <span className="ml-2 text-xl font-bold text-gray-900">Hedra Avatar</span>
+            <Link href="/" className="flex items-center ml-6">
+              <img src="/assets/main_logo_coko.png" alt="Hedra" className="h-12 w-auto" />
+              {/* <span className="ml-2 text-xl font-bold text-gray-900">Hedra Avatar</span> */}
             </Link>
           </div>
 

@@ -172,7 +172,7 @@ export default function Page() {
     return (
       <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)]">
         <div className="w-full flex justify-center mb-8">
-          <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-16 w-auto" />
+          <img src="assets/Main_logo.png" className="h-16 w-auto" />
         </div>
         <AuthForm
           onLogin={handleLogin}
@@ -192,13 +192,13 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
             <div className="flex justify-center mb-8">
-              <img src="assets/hedra_logo.svg" alt="Hedra Logo" className="h-20 w-auto" />
+              {/* <img src="assets/Main_logo.png" alt="Hedra Logo" className="h-40 w-auto" /> */}
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               안녕하세요, {user.username}님!
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              AI 아바타와 대화하고 커뮤니티에 참여해보세요.
+              대화를 시작하고 커뮤니티에 참여해보세요.
             </p>
             
             {/* AI 아바타 대화 섹션 */}
@@ -211,7 +211,7 @@ export default function Page() {
             </div>
             
             {/* 컨트롤 버튼들 */}
-            <div className="flex justify-center gap-4 mb-8">
+            {/* <div className="flex justify-center gap-4 mb-8">
               <button
                 onClick={handleCleanupAgent}
                 className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
@@ -224,7 +224,7 @@ export default function Page() {
               >
                 📊 로그 보기
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -314,15 +314,53 @@ function SimpleVoiceAssistant(props: { onConnectButtonClicked: () => void }) {
             transition={{ duration: 0.3, ease: [0.09, 1.04, 0.245, 1.055] }}
             className="grid items-center justify-center h-full"
           >
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3, delay: 0.1 }}
-              className="uppercase px-4 py-2 bg-white text-black rounded-md"
-              onClick={() => props.onConnectButtonClicked()}
-            >
-              Start a conversation
-            </motion.button>
+            <div className="text-center space-y-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="space-y-4"
+              >
+                <div className="text-6xl mb-4">🎭</div>
+                <h2 className="text-3xl font-bold text-white mb-2">
+                  AI 아바타와 대화하세요
+                </h2>
+                <p className="text-gray-300 text-lg max-w-md mx-auto">
+                  실시간 음성 대화로 자연스러운 소통을 경험해보세요
+                </p>
+              </motion.div>
+              
+              <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(0, 0, 0, 0.4)"
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-semibold text-lg rounded-2xl shadow-xl transition-all duration-300 hover:from-gray-700 hover:to-gray-900 overflow-hidden"
+                onClick={() => props.onConnectButtonClicked()}
+              >
+                <div className="absolute inset-0 bg-white opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <div className="relative flex items-center gap-3">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                  </svg>
+                  대화 시작하기
+                </div>
+              </motion.button>
+              
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="flex items-center justify-center gap-2 text-sm text-gray-400"
+              >
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                마이크 권한을 허용해주세요
+              </motion.div>
+            </div>
           </motion.div>
         ) : (
           <motion.div
